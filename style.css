@@ -3,29 +3,107 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+#name {
+    font-family: Montserrat, Open Sans;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+}
+
+.home-container {
+    background-color: #242733;
+}
+
+.about-container {
+    background-color: #242733;
+    color: white;
+}
+
+#bio {
+    text-align: center;
+}
+
+.header-container {
+    background-color: #5B9B97;
+}
+
+
+/* #about {
+    background-color: #00FFF0;
+    color: #242733;
+} */
+
+#about {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Montserrat, Open Sans;
+    font-weight: bold;
+    font-size: 16px;
+    color: #242733;
+    background-color: #00FFF0;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    /* Ensure cursor changes to pointer on hover */
+}
+
 .navbar a {
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
 }
 
-.portfolioHEADER {
+.main-header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    color: white;
+}
+
+.link-hidden {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+#education-header {
+    font-family: Montserrat, Open Sans;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+#about-header {
+    font-family: Montserrat, Open Sans;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    text-align: center;
 }
 
 #greeting {
     font-family: Montserrat, Open Sans;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
 }
 
 #bio {
     font-family: Source Sans Pro;
 }
 
-#connect {
+#student {
     font-family: Montserrat, Open Sans;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
 }
 
 .institute {
     font-family: Montserrat, Open Sans;
+    font-size: large;
 }
 
 .description {
