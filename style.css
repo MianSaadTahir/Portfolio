@@ -1,3 +1,41 @@
 .sourcecode {
     text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.portfolioHEADER {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#greeting {
+    font-family: Montserrat, Open Sans;
+}
+
+#bio {
+    font-family: Source Sans Pro;
+}
+
+#connect {
+    font-family: Montserrat, Open Sans;
+}
+
+.institute {
+    font-family: Montserrat, Open Sans;
+}
+
+.description {
+    font-family: Source Sans Pro;
+}
+
+.title {
+    font-family: Montserrat, Open Sans;
+}
+
+.explanation {
+    font-family: Source Sans Pro;
 }
