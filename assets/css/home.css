@@ -1,5 +1,5 @@
 #name {
-    padding-left: 75px;
+    margin-left: 75px;
     font-family: Montserrat, Open Sans;
     font-size: 80px;
     font-weight: bold;
@@ -11,6 +11,12 @@
     font-size: 80px;
     font-weight: bold;
     color: white;
+}
+
+#pfp {
+    margin-right: 60px;
+    float: right;
+    height: 400px;
 }
 
 #resume {
@@ -34,11 +40,11 @@
     font-size: x-large;
     font-weight: bold;
     color: white;
-    padding-left: 70px;
+    margin-left: 70px;
 }
 
 #student {
-    padding-left: 70px;
+    margin-left: 70px;
     font-family: Montserrat, Open Sans;
     font-size: 17px;
     color: rgb(195, 194, 194);
