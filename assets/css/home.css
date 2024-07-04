@@ -1,0 +1,42 @@
+#name {
+    font-family: Montserrat, Open Sans;
+    font-size: 80px;
+    font-weight: bold;
+    color: #00FFF0;
+}
+
+#surname {
+    font-family: Montserrat, Open Sans;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+}
+
+#resume {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Montserrat, Open Sans;
+    font-weight: bold;
+    font-size: 16px;
+    color: #242733;
+    background-color: #00FFF0;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#greeting {
+    font-family: Montserrat, Open Sans;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+}
+
+#student {
+    font-family: Montserrat, Open Sans;
+    font-size: 17px;
+    color: rgb(195, 194, 194);
+    font-weight: bold;
+}
