@@ -5,18 +5,33 @@
     font-size: x-large;
 }
 
+#aboutme {
+    background-color: #242733;
+    height: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: white;
+}
+
 .description {
     font-family: Source Sans Pro;
     color: rgb(195, 194, 194);
+    text-align: justify;
 }
 
-#bio.description {
-    margin-left: 30px;
-    margin-right: 30px;
-    text-align: center;
+#skill.description {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
 }
 
 .institute {
     font-family: Montserrat, Open Sans;
     font-size: medium;
+}
+
+#edu-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
 }
