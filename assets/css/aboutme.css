@@ -1,0 +1,21 @@
+.title {
+    font-family: Montserrat, Open Sans;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.description {
+    font-family: Source Sans Pro;
+    color: rgb(195, 194, 194);
+}
+
+#bio.description {
+    text-align: center;
+}
+
+.institute {
+    font-family: Montserrat, Open Sans;
+    font-size: medium;
+}
