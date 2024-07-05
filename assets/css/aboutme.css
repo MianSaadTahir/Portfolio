@@ -3,20 +3,26 @@
     font-family: Montserrat, Open Sans;
     text-align: center;
     font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-bottom: 20px;
+    font-family: Source Sans Pro;
+    color: rgb(195, 194, 194);
+    text-align: justify;
 }
 
 #aboutme {
     background-color: #242733;
-    height: 100%;
     padding-left: 80px;
     padding-right: 80px;
     color: white;
 }
 
-.description {
-    font-family: Source Sans Pro;
-    color: rgb(195, 194, 194);
-    text-align: justify;
+#skill {
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 #skill.description {
@@ -25,13 +31,21 @@
     gap: 80px;
 }
 
+.edu {
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
 .institute {
     font-family: Montserrat, Open Sans;
     font-size: medium;
+    font-weight: bold;
 }
 
-#edu-container {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
+.edu div {
+    display: inline-block;
+}
+
+#uni {
+    margin-right: 200px;
 }
