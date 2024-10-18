@@ -24,14 +24,14 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 sticky-top">
             <div class="container px-5">
-                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Portfolio</span></a>
+                <a class="navbar-brand" href="#home"><span class="fw-bolder text-primary">Portfolio</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                         <li class="nav-item"><a class="nav-link" href=#home>Home</a></li>
                         <li class="nav-item"><a class="nav-link" href=#about>About</a></li>
                         <li class="nav-item"><a class="nav-link" href=#projects>Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                                 </h1>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                     <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
-                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="about.html">About Me</a>
+                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href=#contact>Let's Connect</a>
                                 </div>
                                 </div>
                             </div>
@@ -186,9 +186,10 @@
 
         <section id="about">
 
-            <div class="container px-5 my-5 ">
+            <div class="container px-5 py-5">
                 <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">About Me</span></h1>
+                    <h1 class="display-5 fw-bolder mb-0">
+                        <span class="text-gradient d-inline">About Me</span></h1>
                     <style>
                         .text-justify {
                             text-align: justify;
@@ -315,36 +316,110 @@
 
         <div class="divider"></div>
 
-        <section class="py-5" id="projects">
-            <div class="container px-5 mb-5">
+        <section id="projects">
+            <div class="container px-5 py-5 ">
                 <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    <h1 class="display-5 fw-bolder mb-0">
+                        <span class="text-gradient d-inline">Projects</span>
+                    </h1>
                 </div>
                 <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Project Card 1-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <!-- Project Card 1-->
+                    <div class="col-lg-6">
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 ">
                             <div class="card-body p-0">
                                 <div class="d-flex align-items-center">
                                     <div class="p-5">
                                         <h2 class="fw-bolder">Project Name 1</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!
-                                        </p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
                                     </div>
-                                    <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    <!-- Make sure image fits the card and has rounded lower corners -->
+                                    <img class="img-fluid rounded-end-4 w-100 h-auto" src="/assets/s.jpg" alt="Project 1 Image" />
+
                                 </div>
                             </div>
                         </div>
-                        <!-- Project Card 2-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0">
+                    </div>
+                    <!-- Project Card 2-->
+                    <div class="col-lg-6">
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 ">
                             <div class="card-body p-0">
                                 <div class="d-flex align-items-center">
                                     <div class="p-5">
-                                        <h2 class="fw-bolder">Project Name 2</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!
-                                        </p>
+                                        <h2 class="fw-bolder">Project Name 1</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
                                     </div>
-                                    <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    <!-- Make sure image fits the card and has rounded lower corners -->
+                                    <img class="img-fluid rounded-end-4 w-100 h-auto" src="/assets/s.jpg" alt="Project 1 Image" />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <!-- Project Card 1-->
+                    <div class="col-lg-6">
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 ">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5">
+                                        <h2 class="fw-bolder">Project Name 1</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                    </div>
+                                    <!-- Make sure image fits the card and has rounded lower corners -->
+                                    <img class="img-fluid rounded-end-4 w-100 h-auto" src="/assets/s.jpg" alt="Project 1 Image" />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2-->
+                    <div class="col-lg-6">
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 ">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5">
+                                        <h2 class="fw-bolder">Project Name 1</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                    </div>
+                                    <!-- Make sure image fits the card and has rounded lower corners -->
+                                    <img class="img-fluid rounded-end-4 w-100 h-auto" src="/assets/s.jpg" alt="Project 1 Image" />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <!-- Project Card 1-->
+                    <div class="col-lg-6">
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 ">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5">
+                                        <h2 class="fw-bolder">Project Name 1</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                    </div>
+                                    <!-- Make sure image fits the card and has rounded lower corners -->
+                                    <img class="img-fluid rounded-end-4 w-100 h-auto" src="/assets/s.jpg" alt="Project 1 Image" />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2-->
+                    <div class="col-lg-6">
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 ">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5">
+                                        <h2 class="fw-bolder">Project Name 1</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                    </div>
+                                    <!-- Make sure image fits the card and has rounded lower corners -->
+                                    <img class="img-fluid rounded-end-4 w-100 h-auto" src="/assets/s.jpg" alt="Project 1 Image" />
+
                                 </div>
                             </div>
                         </div>
@@ -353,8 +428,16 @@
             </div>
         </section>
 
-        <section id="contact">
+        <div class="divider"></div>
 
+        <section id="contact">
+            <div class="container px-5 py-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0">
+                        <span class="text-gradient d-inline">Contact</span>
+                    </h1>
+                </div>
+            </div>
         </section>
 
     </main>
