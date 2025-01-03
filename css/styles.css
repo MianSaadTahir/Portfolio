@@ -12410,6 +12410,15 @@ html {
     border-bottom: 2px solid #D51F88;
 }
 
+.handles {
+    transition: all 0.5s ease;
+}
+
+.handles:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+}
+
 .gradient-btn {
     position: relative;
     display: inline-block;
