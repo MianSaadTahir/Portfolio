@@ -7,11 +7,16 @@ document.querySelectorAll('a.nav-link').forEach(anchor => {
         });
     });
 });
+
+//name typing effect
 document.addEventListener('DOMContentLoaded', function() {
     const name = "Saad Tahir";
     const nameElement = document.getElementById('name');
-    let index = 0;
+    let index = 1;
     let typing = true;
+
+
+    nameElement.innerHTML = name.charAt(0);
 
     function type() {
         if (typing) {
@@ -20,20 +25,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 index++;
                 setTimeout(type, 200);
             } else {
-                typing = false; // Switch to deleting after typing is complete
-                setTimeout(type, 2500); // Pause before starting to delete
+                typing = false;
+                setTimeout(type, 2500);
             }
         } else {
-            if (index > 0) {
+            if (index > 1) {
                 nameElement.innerHTML = nameElement.innerHTML.slice(0, -1);
                 index--;
                 setTimeout(type, 100);
             } else {
-                typing = true; // Switch back to typing
-                setTimeout(type, 500); // Pause before starting to type again
+                typing = true;
+                setTimeout(type, 500);
             }
         }
     }
 
-    type(); // Start the typing process
+    type();
 });
