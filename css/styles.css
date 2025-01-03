@@ -12396,3 +12396,16 @@ html {
         left: -2vw;
     }
 }
+
+.nav-link {
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #D51F88;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #D51F88;
+}
