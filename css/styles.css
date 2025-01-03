@@ -12409,3 +12409,23 @@ html {
 .nav-link:hover {
     border-bottom: 2px solid #D51F88;
 }
+
+.custom-btn {
+    background-color: #9225AE;
+    /* Set the button's background color */
+    color: #fff;
+    /* Set the text color to white for contrast */
+    border: 2px solid #9225AE;
+    /* Optional: Add a border with the same color */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+}
+
+.custom-btn:hover {
+    background-color: #fff;
+    /* Change the background color on hover */
+    color: #9225AE;
+    /* Change text color on hover */
+    border: 2px solid #9225AE;
+    /* Keep the border color on hover */
+}
