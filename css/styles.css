@@ -12404,6 +12404,14 @@ html {
     transition: border-color 0.3s ease;
 }
 
+#about,
+#skills,
+#projects,
+#contact {
+    scroll-margin-top: 80px;
+    /* Adjust based on your navbar height */
+}
+
 .nav-link.active {
     border-bottom: 2px solid #D51F88;
 }
@@ -12411,19 +12419,22 @@ html {
 .nav-link:hover {
     border-bottom: 2px solid #D51F88;
 }
+
 .navbar-brand span {
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 .navbar-brand:hover span {
-transform: translateY(-2px);
-text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-color: #007bff;
+    transform: translateY(-2px);
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    color: #007bff;
 }
+
 .navbar-brand:hover span {
-transform: scale(1.05);
-color: #6f42c1;
+    transform: scale(1.05);
+    color: #6f42c1;
 }
+
 .handles {
     transition: all 0.5s ease;
 }
