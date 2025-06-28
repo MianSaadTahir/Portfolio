@@ -12400,6 +12400,8 @@ html {
 .nav-link {
     text-decoration: none;
     padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
 .nav-link.active {
@@ -12409,7 +12411,19 @@ html {
 .nav-link:hover {
     border-bottom: 2px solid #D51F88;
 }
+.navbar-brand span {
+    transition: all 0.3s ease; 
+}
 
+.navbar-brand:hover span {
+transform: translateY(-2px);
+text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+color: #007bff;
+}
+.navbar-brand:hover span {
+transform: scale(1.05);
+color: #6f42c1;
+}
 .handles {
     transition: all 0.5s ease;
 }
