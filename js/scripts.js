@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(typeRole, 100);
             } else {
                 typing = false;
-                setTimeout(typeRole, 2000);
+                setTimeout(typeRole, 2500);
             }
         } else {
             if (charIndex > 0) {
