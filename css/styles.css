@@ -12497,3 +12497,28 @@ html {
     background-clip: padding-box, border-box;
     color: #fff;
 }
+
+.project-card {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.hover-skill {
+    transition: transform 0.3s ease, font-weight 0.3s ease;
+}
+
+.hover-skill:hover {
+    transform: scale(1.03);
+    font-weight: 500;
+}
+
+.education-card {
+    transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+    transform: scale(1.02);
+}
