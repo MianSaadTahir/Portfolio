@@ -12522,3 +12522,18 @@ html {
 .education-card:hover {
     transform: scale(1.02);
 }
+
+#role-container {
+    display: inline-block;
+    min-height: 2.5em;
+    /* Adjust based on your tallest role */
+    vertical-align: middle;
+}
+
+#role {
+    display: inline-block;
+    max-width: 220px;
+    /* Match your profile image width */
+    word-break: break-word;
+    text-align: left;
+}
