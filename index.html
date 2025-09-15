@@ -54,7 +54,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 medium fw-bolder">
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
               </li>
@@ -489,7 +489,7 @@
             </p>
           </div>
 
-          <!-- Education Section-->
+          <!-- Education-->
           <section id="about">
             <!-- Education Card -->
             <div class="card shadow border-0 rounded-4 mb-5">
@@ -513,7 +513,7 @@
                         2023 - 2027
                       </div>
                       <div class="mb-2">
-                        <div class="small fw-bolder">UET, Lahore</div>
+                        <div class="medium fw-bolder">UET, Lahore</div>
                         <div class="small text-muted">CGPA: 3.5</div>
                       </div>
                       <div class="fst-italic">
@@ -529,7 +529,7 @@
                         2021 - 2023
                       </div>
                       <div class="mb-2">
-                        <div class="small fw-bolder">KIPS College, Lahore</div>
+                        <div class="medium fw-bolder">KIPS College, Lahore</div>
                         <div class="small text-muted">Grade: A+</div>
                       </div>
                       <div class="fst-italic">
@@ -549,7 +549,7 @@
 
       <!-- <div class="divider"></div> -->
 
-      <!-- Skills Section-->
+      <!-- Skills-->
       <section id="skills">
         <!-- Skillset Card-->
         <div class="container px-5 py-5">
@@ -848,6 +848,7 @@
 
       <!-- <div class="divider"></div> -->
 
+      <!-- Projects-->
       <section id="projects">
         <div class="container px-5 py-5">
           <div class="text-center mb-5">
@@ -856,6 +857,45 @@
             </h1>
           </div>
           <div class="row gx-5">
+            <!-- recipe generator -->
+            <div class="col-lg-4 col-md-6 mb-5">
+              <div
+                class="card project-card overflow-hidden shadow rounded-4 border-0 h-100"
+              >
+                <!-- Image on top -->
+                <img
+                  src="/assets/recipe.jpg"
+                  class="card-img-top img-fluid"
+                  alt="recipe"
+                />
+
+                <div
+                  class="card-body text-center d-flex flex-column justify-content-between p-4 p-md-5"
+                >
+                  <h2 class="fw-bolder">Recipe Generator</h2>
+                  <h6 class="my-3 fw-bolder">
+                    Next.js, n8n, Supabase, MongoDB
+                  </h6>
+                  <p class="text-justify">
+                    A full-stack AI web app that generates personalized recipes
+                    using Gemini AI via n8n workflows, with preferences stored
+                    in MongoDB and recipes managed in Supabase.
+                  </p>
+                  <div class="d-flex justify-content-center gap-2 mt-3">
+                    <a
+                      class="btn btn-primary btn-sm gradient-btn px-4 py-1 rounded-4 fs-6 fw-bolder"
+                      href="https://github.com/MianSaadTahir/Nexium_Saad_Internship"
+                      >Source Code</a
+                    >
+                    <a
+                      class="btn custom-outline-btn btn-sm px-4 py-1 rounded-4 fs-6 fw-bolder"
+                      href="https://nexium-saad-grand-project.vercel.app/"
+                      >Live Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- Price My Ride -->
             <div class="col-lg-4 col-md-6 mb-5">
               <div
@@ -863,7 +903,7 @@
               >
                 <!-- Image on top -->
                 <img
-                  src="/assets/pricemyride.png"
+                  src="/assets/pricemyride.jpg"
                   class="card-img-top img-fluid"
                   alt="pricemyride"
                 />
@@ -873,17 +913,16 @@
                 >
                   <h2 class="fw-bolder">Price My Ride</h2>
                   <h6 class="my-3 fw-bolder">
-                    Flask, TensorFlow, Keras, <br />Scikit-Learn
+                    Flask, TensorFlow, Scikit-Learn
                   </h6>
                   <p class="text-justify">
-                    A deep learning-based Flask web app that predicts used car
-                    prices using a custom-trained DNN model. Includes
-                    preprocessing workflows, visualizations, and model
-                    evaluation.
+                    A Flask web app that predicts used car prices with a
+                    custom-trained deep neural network, featuring data
+                    preprocessing, visualizations, and model evaluation.
                   </p>
                   <div class="d-flex justify-content-center mt-3">
                     <a
-                      class="btn btn-primary btn-sm gradient-btn px-5 py-3 rounded-4 fs-6 fw-bolder"
+                      class="btn btn-primary btn-sm gradient-btn px-4 py-3 rounded-4 fs-6 fw-bolder"
                       href="https://github.com/MianSaadTahir/Price-My-Ride"
                       >Source Code</a
                     >
@@ -898,7 +937,7 @@
               >
                 <!-- Image on top -->
                 <img
-                  src="/assets/threatguard.png"
+                  src="/assets/threatguard.jpg"
                   class="card-img-top img-fluid"
                   alt="ThreatGuard"
                 />
@@ -907,18 +946,15 @@
                   class="card-body text-center d-flex flex-column justify-content-between p-4 p-md-5"
                 >
                   <h2 class="fw-bolder">Threat Guard</h2>
-                  <h6 class="my-3 fw-bolder">
-                    Flask, Python, SQLite, REST API
-                  </h6>
+                  <h6 class="my-3 fw-bolder">Python, Flask, SQLite</h6>
                   <p class="text-justify">
-                    A Flask web app that detects phishing URLs, scans files and
-                    QR codes for malware. It also checks for breached
-                    credentials, and simulates DoS attacks to test IP blocking
-                    and rate limiting.
+                    A Flask-based security app that scans URLs, files, and QR
+                    codes for malware, checks breached credentials, and tests IP
+                    blocking with DoS simulations.
                   </p>
                   <div class="d-flex justify-content-center mt-3">
                     <a
-                      class="btn btn-primary btn-sm gradient-btn px-5 py-3 rounded-4 fs-6 fw-bolder"
+                      class="btn btn-primary btn-sm gradient-btn px-4 py-3 rounded-4 fs-6 fw-bolder"
                       href="https://github.com/MianSaadTahir/Threat-Guard"
                       >Source Code</a
                     >
@@ -944,9 +980,9 @@
                   <h2 class="fw-bolder">Video Nexus</h2>
                   <h6 class="my-3 fw-bolder">HTML, CSS, JavaScript</h6>
                   <p class="text-justify">
-                    A web-based video entertainment platform inspired by
-                    YouTube. Features responsive UI, category-based browsing,
-                    and custom playback controls built with vanilla JavaScript.
+                    A YouTube-inspired video platform that provides a responsive
+                    UI, category-based browsing, and custom playback controls
+                    built in JavaScript.
                   </p>
                   <div class="d-flex justify-content-center gap-2 mt-3">
                     <a
@@ -981,13 +1017,13 @@
                   <h2 class="fw-bolder">Nike Store</h2>
                   <h6 class="my-3 fw-bolder">C#, MSSQL, Windows Forms</h6>
                   <p class="text-justify">
-                    A retail inventory system with admin and customer modules
-                    for managing products, orders, and feedback via a WinForms
-                    interface, powered by an MSSQL database.
+                    A retail inventory system that enables admin and customer
+                    modules to manage products, orders, and feedback through a
+                    WinForms interface backed by MSSQL.
                   </p>
                   <div class="d-flex justify-content-center mt-3">
                     <a
-                      class="btn btn-primary btn-sm gradient-btn px-5 py-3 rounded-4 fs-6 fw-bolder"
+                      class="btn btn-primary btn-sm gradient-btn px-4 py-3 rounded-4 fs-6 fw-bolder"
                       href="https://github.com/MianSaadTahir/Nike-Store"
                       >Source Code</a
                     >
@@ -1013,13 +1049,13 @@
                   <h2 class="fw-bolder">Escape Plan</h2>
                   <h6 class="my-3 fw-bolder">C#, Windows Forms</h6>
                   <p class="text-justify">
-                    A 2D shooter game demonstrating advanced OOP concepts like
-                    Singleton, Enums, and Interfaces. Features DLL-based
-                    structure, real-time controls, and a health system.
+                    A 2D shooter game that showcases OOP principles (Singleton,
+                    Enums, Interfaces) with a modular DLL-based structure,
+                    navigation controls, and a dynamic health system.
                   </p>
                   <div class="d-flex justify-content-center mt-3">
                     <a
-                      class="btn btn-primary btn-sm gradient-btn px-5 py-3 rounded-4 fs-6 fw-bolder"
+                      class="btn btn-primary btn-sm gradient-btn px-4 py-3 rounded-4 fs-6 fw-bolder"
                       href="https://github.com/MianSaadTahir/Escape-Plan"
                       >Source Code</a
                     >
@@ -1029,9 +1065,8 @@
             </div>
           </div>
         </div>
-
-        <!--projects-->
       </section>
+      <!--projects-->
 
       <!-- <div class="divider"></div> -->
 
@@ -1102,8 +1137,8 @@
                     </a> -->
           </div>
         </div>
-        <!--contact-->
       </section>
+      <!--contact-->
     </main>
     <!-- Footer-->
     <footer class="bg-light py-4 mt-auto">
