@@ -30,7 +30,19 @@
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- aos -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
+  <script>
+    AOS.init({
+      duration: 1000, // fade speed
+      once: true, // animate only once
+    });
+  </script>
 
   <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
@@ -462,35 +474,34 @@
               }
             </style>
             <p class="lead text-justify mt-4 fw-light mb-4">
-              As a third-year Computer Science student at the University of
-              Engineering and Technology Lahore, I am passionate about building
-              impactful software solutions that combine intelligent systems with
-              clean, user-centric design.
+              <span data-aos="fade-up">
+                As a third-year Computer Science student at the University of
+                Engineering and Technology Lahore, I am passionate about
+                creating impactful software solutions that blend intelligent
+                systems with clean, user-focused design.
+              </span>
+              <br /><br />
+              <span data-aos="fade-up" data-aos-delay="200">
+                With expertise in Python, C#, JavaScript, and modern web
+                technologies like Next.js, Tailwind CSS, and Flask, I build
+                scalable applications powered by secure APIs and cloud databases
+                such as Supabase and MongoDB.
+              </span>
               <br />
               <br />
-              With a solid foundation in Object-Oriented Programming, Data
-              Structures and Algorithms, and Database Systems, I’ve built
-              real-world projects across diverse domains, from deep
-              learning-powered web apps and malware scanners to GUI inventory
-              systems and 2D games. I’m proficient in Python, C++, C#, and SQL,
-              alongside front-end technologies like HTML, CSS, Bootstrap, and
-              JavaScript and well-versed in frameworks such as Flask,
-              TensorFlow, and Keras.
-              <br />
-              <br />
-              I’ve also worked in cybersecurity, using tools like Nmap, sqlmap,
-              and Wireshark for vulnerability analysis and secure software
-              development. My technical journey spans full-stack web
-              development, machine learning, and cybersecurity, supported by
-              tools like VS Code, Git, Jupyter Notebook, Google Colab, and Kali
-              Linux integrated seamlessly via REST APIs. I aim to write clean,
-              scalable code while continually exploring new technologies to
-              broaden my capabilities.
+              <span data-aos="fade-up" data-aos-delay="400">
+                My projects span AI-driven recipe generators, deep learning
+                price predictors, cybersecurity tools, and desktop
+                systems—demonstrating strong foundations in OOP, DSA, and
+                database design. I strive to write clean, efficient code while
+                continuously exploring emerging technologies to deliver
+                meaningful solutions.
+              </span>
             </p>
           </div>
 
           <!-- Education-->
-          <section id="about">
+          <section id="education">
             <!-- Education Card -->
             <div class="card shadow border-0 rounded-4 mb-5">
               <div class="card-body p-5">
@@ -1156,5 +1167,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <!-- aos -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // animation duration in ms
+        once: true, // animation happens only once
+      });
+    </script>
   </body>
 </html>
