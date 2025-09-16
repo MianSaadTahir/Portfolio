@@ -12656,19 +12656,38 @@ html {
 }
 
 .hover-skill {
-  transition: transform 0.3s ease, font-weight 0.3s ease;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
 }
 
 .hover-skill:hover {
   transform: scale(1.1);
-  font-weight: 500;
 }
 
+/* On small screens (mobile) */
+@media (max-width: 576px) {
+  .hover-skill {
+    width: 60px; 
+    height: 60px;
+  }
+}
 .education-card {
+  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 .education-card:hover {
+  transform: scale(1.02);
+}
+
+.experience-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
   transform: scale(1.02);
 }
 
