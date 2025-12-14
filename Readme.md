@@ -61,7 +61,7 @@ open index.html
 start index.html
 ```
 
-**Or use Live Server in VS Code**
+Or use Live Server in VS Code
 
 ## Contributing
 
