@@ -70,4 +70,4 @@ Feel free to check the [issues page](https://github.com/MianSaadTahir/Portfolio/
 
 ## License
 
-This project is open source and available under the MIT License.
+This project is open source and available under the MIT [License](https://github.com/MianSaadTahir/Portfolio/License).
