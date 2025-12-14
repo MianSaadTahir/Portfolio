@@ -27,12 +27,10 @@ A clean, responsive personal portfolio website showcasing projects, skills, educ
 <img src="/assets/1.png" alt="Homepage" width="75%">
 
 ## Live Preview
+
 Click [here](https://miansaadtahir.netlify.app/) to view live demo.
 
-
 ## Technologies Used
-
-**Frontend:**
 
 - HTML5, CSS3
 - JavaScript
