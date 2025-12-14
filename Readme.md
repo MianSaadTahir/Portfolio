@@ -6,6 +6,7 @@ A clean, responsive personal portfolio website showcasing projects, skills, educ
 
 - [Features](#features)
 - [Screenshots](#screenshots)
+- [Live Preview](#live-preview)
 - [Technologies Used](#technologies-used)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -24,6 +25,10 @@ A clean, responsive personal portfolio website showcasing projects, skills, educ
 ## Screenshots
 
 <img src="/assets/1.png" alt="Homepage" width="75%">
+
+## Live Preview
+Click [here](https://miansaadtahir.netlify.app/) to view live demo.
+
 
 ## Technologies Used
 
