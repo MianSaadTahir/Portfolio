@@ -81,10 +81,10 @@ export default function Skills() {
     <section id="skills" className="py-20 bg-black/5 dark:bg-white/5">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">Technical Skills</span>
           </h2>
-          <p className="text-xl text-muted max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted max-w-2xl mx-auto">
             Tools and technologies I use to bring ideas to life.
           </p>
         </div>
@@ -95,7 +95,7 @@ export default function Skills() {
               key={idx}
               className="bg-white dark:bg-[#0f1016] rounded-2xl p-8 border border-white/5 shadow-sm"
             >
-              <h3 className="text-2xl font-bold mb-6 text-foreground/80">
+              <h3 className="text-xl md:text-2xl font-bold mb-6 text-foreground/80">
                 {category.category}
               </h3>
               <div className="flex flex-wrap gap-6 justify-center md:justify-start">
@@ -117,7 +117,7 @@ export default function Skills() {
                         />
                       )}
                     </div>
-                    <span className="text-sm font-medium text-muted">
+                    <span className="text-xs md:text-sm font-medium text-muted">
                       {skill.name}
                     </span>
                   </motion.div>

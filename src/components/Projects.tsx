@@ -67,10 +67,10 @@ export default function Projects() {
     <section id="projects" className="py-20">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">Featured Projects</span>
           </h2>
-          <p className="text-xl text-muted max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted max-w-2xl mx-auto">
             A showcase of my recent work.
           </p>
         </div>
@@ -118,12 +118,14 @@ export default function Projects() {
 
               <div className="p-8">
                 <div className="mb-4">
-                  <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+                  <h3 className="text-xl md:text-2xl font-bold mb-2">
+                    {project.title}
+                  </h3>
                   <p className="text-xs font-semibold text-primary uppercase tracking-wider">
                     {project.tech}
                   </p>
                 </div>
-                <p className="text-muted text-base leading-relaxed mb-6">
+                <p className="text-muted text-sm md:text-base leading-relaxed mb-6">
                   {project.description}
                 </p>
               </div>

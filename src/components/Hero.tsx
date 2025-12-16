@@ -27,14 +27,14 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20">
-            <span className="text-sm font-bold tracking-wider text-primary uppercase">
+            <span className="text-xs md:text-sm font-bold tracking-wider text-primary uppercase">
               Design &middot; Develop &middot; Deliver
             </span>
           </div>
-          <h2 className="text-2xl md:text-3xl font-light text-muted mb-2">
+          <h2 className="text-xl md:text-3xl font-light text-muted mb-2">
             Hi There, I&apos;m Saad Tahir
           </h2>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight min-h-[3.5em] md:min-h-[2.5em]">
+          <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-tight min-h-[3.5em] md:min-h-[2.5em]">
             <span className="text-gradient block">
               <Typewriter
                 words={[
@@ -46,7 +46,7 @@ export default function Hero() {
               />
             </span>
           </h1>
-          <p className="text-lg text-muted mb-8 max-w-lg leading-relaxed">
+          <p className="text-base md:text-lg text-muted mb-8 max-w-lg leading-relaxed">
             Turning real-world problems into impactful digital solutions.
             Passionate about building scalable applications with modern
             technologies.

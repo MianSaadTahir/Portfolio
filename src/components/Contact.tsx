@@ -5,13 +5,18 @@ import { Mail, Linkedin, Github } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-transparent to-primary/5">
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-b from-transparent to-primary/5"
+    >
       <div className="container mx-auto px-6 md:px-12 text-center">
-        <h2 className="text-5xl font-bold mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6">
           <span className="text-gradient">Get In Touch</span>
         </h2>
-        <p className="text-xl text-muted max-w-2xl mx-auto mb-12">
-          Let’s connect and build something impactful! Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
+        <p className="text-lg md:text-xl text-muted max-w-2xl mx-auto mb-12">
+          Let’s connect and build something impactful! Whether you have a
+          question or just want to say hi, I&apos;ll try my best to get back to
+          you!
         </p>
 
         <div className="flex justify-center gap-8 mb-16">
@@ -38,7 +43,7 @@ export default function Contact() {
         </div>
 
         <footer className="border-t border-white/10 pt-8">
-          <p className="text-sm text-muted">
+          <p className="text-xs md:text-sm text-muted">
             &copy; {new Date().getFullYear()} Saad Tahir. All rights reserved.
           </p>
         </footer>

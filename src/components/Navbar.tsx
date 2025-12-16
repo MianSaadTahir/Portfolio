@@ -36,7 +36,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold font-display">
+        <Link href="/" className="text-xl md:text-2xl font-bold font-display">
           <span className="text-gradient">Portfolio</span>
         </Link>
 
@@ -46,7 +46,7 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-lg font-medium text-muted hover:text-primary transition-colors"
+              className="text-base md:text-lg font-medium text-muted hover:text-primary transition-colors"
             >
               {link.name}
             </Link>
@@ -78,13 +78,13 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-lg font-medium text-foreground/80 hover:text-primary"
+                  className="text-base md:text-lg font-medium text-foreground/80 hover:text-primary"
                 >
                   {link.name}
                 </Link>
               ))}
               <div className="flex items-center gap-4 mt-2">
-                <span className="text-muted text-sm font-medium">
+                <span className="text-muted text-xs md:text-sm font-medium">
                   Switch Theme:
                 </span>
                 <ThemeToggle />

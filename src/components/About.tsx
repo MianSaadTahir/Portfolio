@@ -17,10 +17,10 @@ export default function About() {
     <section id="about" className="py-20 relative">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">About Me</span>
           </h2>
-          <p className="text-xl text-muted max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted max-w-2xl mx-auto">
             My journey through the world of technology and problem solving.
           </p>
         </div>
@@ -34,7 +34,7 @@ export default function About() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex-1 flex items-center justify-center gap-2 py-6 text-sm md:text-lg font-medium transition-all ${
+                  className={`flex-1 flex items-center justify-center gap-2 py-6 text-xs md:text-lg font-medium transition-all ${
                     activeTab === tab.id
                       ? "text-primary bg-primary/5 border-b-2 border-primary"
                       : "text-muted hover:text-foreground hover:bg-white/5"
@@ -59,7 +59,7 @@ export default function About() {
                   transition={{ duration: 0.3 }}
                   className="space-y-6"
                 >
-                  <p className="text-xl leading-relaxed text-muted">
+                  <p className="text-lg md:text-xl leading-relaxed text-muted">
                     As a third-year Computer Science student at the University
                     of Engineering and Technology Lahore, I am passionate about
                     creating impactful software solutions that blend intelligent
@@ -93,20 +93,20 @@ export default function About() {
                 >
                   <div className="relative pl-8 border-l-2 border-primary/20">
                     <div className="absolute top-0 left-[-9px] w-4 h-4 rounded-full bg-primary ring-4 ring-background"></div>
-                    <span className="block text-sm text-primary font-bold mb-1">
+                    <span className="block text-xs md:text-sm text-primary font-bold mb-1">
                       2023 - 2027
                     </span>
-                    <h3 className="text-xl font-bold mb-1">
+                    <h3 className="text-lg md:text-xl font-bold mb-1">
                       Bachelor of Science in Computer Science
                     </h3>
-                    <p className="text-foreground/80 font-medium">
+                    <p className="text-sm md:text-base text-foreground/80 font-medium">
                       UET, Lahore
                     </p>
-                    <p className="text-sm text-muted">CGPA: 3.5</p>
+                    <p className="text-xs md:text-sm text-muted">CGPA: 3.5</p>
                   </div>
                   <div className="relative pl-8 border-l-2 border-primary/20">
                     <div className="absolute top-0 left-[-9px] w-4 h-4 rounded-full bg-muted ring-4 ring-background"></div>
-                    <span className="block text-sm text-muted font-bold mb-1">
+                    <span className="block text-xs md:text-sm text-muted font-bold mb-1">
                       2021 - 2023
                     </span>
                     <h3 className="text-xl font-bold mb-1">
@@ -115,7 +115,7 @@ export default function About() {
                     <p className="text-foreground/80 font-medium">
                       KIPS College, Lahore
                     </p>
-                    <p className="text-sm text-muted">Grade: A+</p>
+                    <p className="text-xs md:text-sm text-muted">Grade: A+</p>
                   </div>
                 </motion.div>
               )}
@@ -131,7 +131,7 @@ export default function About() {
                 >
                   <div className="relative pl-8 border-l-2 border-secondary/20">
                     <div className="absolute top-0 left-[-9px] w-4 h-4 rounded-full bg-secondary ring-4 ring-background"></div>
-                    <span className="block text-sm text-secondary font-bold mb-1">
+                    <span className="block text-xs md:text-sm text-secondary font-bold mb-1">
                       Sep 2025 - Oct 2025
                     </span>
                     <h3 className="text-xl font-bold mb-1">
