@@ -13,7 +13,7 @@ export default function Contact() {
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           <span className="text-gradient">Get In Touch</span>
         </h2>
-        <p className="text-lg md:text-xl text-muted max-w-2xl mx-auto mb-12">
+        <p className="text-base md:text-lg text-muted max-w-2xl mx-auto mb-12">
           Let’s connect and build something impactful! Whether you have a
           question or just want to say hi, I&apos;ll try my best to get back to
           you!

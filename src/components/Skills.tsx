@@ -84,7 +84,7 @@ export default function Skills() {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">Technical Skills</span>
           </h2>
-          <p className="text-lg md:text-xl text-muted max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted max-w-2xl mx-auto">
             Tools and technologies I use to bring ideas to life.
           </p>
         </div>

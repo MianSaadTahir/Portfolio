@@ -31,7 +31,7 @@ export default function Hero() {
               Design &middot; Develop &middot; Deliver
             </span>
           </div>
-          <h2 className="text-xl md:text-3xl font-light text-muted mb-2">
+          <h2 className="text-2xl md:text-3xl font-light text-muted mb-2">
             Hi There, I&apos;m Saad Tahir
           </h2>
           <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-tight min-h-[3.5em] md:min-h-[2.5em]">
