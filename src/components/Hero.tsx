@@ -79,7 +79,7 @@ export default function Hero() {
           <div className="relative w-80 h-80 md:w-[500px] md:h-[500px]">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full opacity-20 blur-2xl animate-pulse"></div>
             <Image
-              src="/assets/p.png"
+              src="/assets/profile.png"
               alt="Saad Tahir"
               fill
               className="object-cover rounded-full border-4 border-white/10 shadow-2xl z-10"

@@ -10,9 +10,8 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Saad Tahir | Portfolio",
-  description:
-    "Computer Science Student & Full Stack Developer - Design . Develop . Deliver",
+  title: "Mian Saad Tahir",
+  description: "Computer Science Student - Full Stack Developer",
 };
 
 export default function RootLayout({
