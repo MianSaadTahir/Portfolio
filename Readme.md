@@ -1,73 +1,36 @@
-# Personal Portfolio
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A clean, responsive personal portfolio website showcasing projects, skills, education, and work experience with smooth animations and modern design.
+## Getting Started
 
-## Table of Contents
-
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Live Preview](#live-preview)
-- [Technologies Used](#technologies-used)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Features
-
-- **Responsive Design**: Fully responsive layout that works on all devices
-- **Typing Animation**: Dynamic role typing effect on homepage
-- **Smooth Scrolling**: Navigation with smooth scroll to sections
-- **AOS Animations**: Scroll-triggered fade-in animations
-- **Project Showcase**: Interactive project cards with hover effects
-- **Skills Display**: Categorized technical skills with icon animations
-- **Contact Section**: Social media integration with animated icons
-
-## Screenshots
-
-<img src="/assets/1.png" alt="Homepage" width="75%">
-
-## Live Preview
-
-Click [here](https://miansaadtahir.netlify.app/) to view live demo.
-
-## Technologies Used
-
-- HTML5, CSS3
-- JavaScript
-- Bootstrap 5
-
-## Usage
-
-### 1. Clone the Repository
+First, run the development server:
 
 ```bash
-git clone https://github.com/MianSaadTahir/Portfolio.git
-cd Portfolio
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-### 2. Open in Browser
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Open `index.html` in your browser:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-**Mac/Linux:**
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-```bash
-open index.html
-```
+## Learn More
 
-**Windows**
+To learn more about Next.js, take a look at the following resources:
 
-```bash
-start index.html
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Or use Live Server in VS Code
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Contributing
+## Deploy on Vercel
 
-Contributions, issues, and feature requests are welcome!  
-Feel free to check the [issues page](https://github.com/MianSaadTahir/Portfolio/issues).
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## License
-
-This project is open source and available under the MIT [License](https://github.com/MianSaadTahir/Portfolio/blob/main/LICENSE).
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
