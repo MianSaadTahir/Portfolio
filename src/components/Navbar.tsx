@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -46,18 +46,12 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-muted hover:text-primary transition-colors"
+              className="text-lg font-medium text-muted hover:text-primary transition-colors"
             >
               {link.name}
             </Link>
           ))}
-          <Link
-             href="/assets/Resume.pdf"
-             target="_blank"
-             className="px-5 py-2.5 rounded-full bg-primary text-white text-sm font-semibold hover:bg-indigo-600 transition-all shadow-lg shadow-indigo-500/20"
-          >
-            Resume
-          </Link>
+          <ThemeToggle />
         </div>
 
         {/* Mobile Toggle */}
@@ -89,13 +83,12 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Link
-                href="/assets/Resume.pdf"
-                target="_blank"
-                className="mt-2 text-center py-3 rounded-lg bg-primary text-white font-semibold"
-              >
-                Resume
-              </Link>
+              <div className="flex items-center gap-4 mt-2">
+                <span className="text-muted text-sm font-medium">
+                  Switch Theme:
+                </span>
+                <ThemeToggle />
+              </div>
             </div>
           </motion.div>
         )}

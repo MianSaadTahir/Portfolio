@@ -3,12 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  
-  /* Brand Colors */
+
+  /* Brand Colors - Light Mode (vibrant but readable) */
   --primary: #4338ca; /* Indigo 700 */
   --secondary: #db2777; /* Pink 600 */
   --accent: #7c3aed; /* Violet 600 */
-  
+
   --muted: #64748b;
   --card: #f8fafc;
 }
@@ -21,23 +21,22 @@
   --color-accent: var(--accent);
   --color-muted: var(--muted);
   --color-card: var(--card);
-  
+
   --font-display: var(--font-jakarta);
   --font-body: var(--font-jakarta);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #050510; /* Deepest Indigo/Black */
-    --foreground: #f8fafc;
-    
-    --primary: #6366f1; /* Indigo 500 */
-    --secondary: #ec4899; /* Pink 500 */
-    --accent: #a78bfa; /* Violet 400 */
-    
-    --muted: #94a3b8;
-    --card: #0f172a; /* Slate 900 */
-  }
+/* Dark Mode Overrides - Activated by .dark class */
+.dark {
+  --background: #050510; /* Deepest Indigo/Black */
+  --foreground: #f8fafc;
+
+  --primary: #6366f1; /* Indigo 500 */
+  --secondary: #ec4899; /* Pink 500 */
+  --accent: #a78bfa; /* Violet 400 */
+
+  --muted: #94a3b8;
+  --card: #0f172a; /* Slate 900 */
 }
 
 body {
@@ -45,6 +44,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-body), sans-serif;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Custom Scrollbar */

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Typewriter } from "@/components/Typewriter";
 
 export default function Hero() {
   return (
@@ -33,12 +34,22 @@ export default function Hero() {
           <h2 className="text-2xl md:text-3xl font-light text-muted mb-2">
             Hi There, I&apos;m Saad Tahir
           </h2>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="text-gradient">Full Stack</span> <br />
-            Developer
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight min-h-[3.5em] md:min-h-[2.5em]">
+            <span className="text-gradient block">
+              <Typewriter
+                words={[
+                  "Full Stack Developer",
+                  "AI/ML Engineer",
+                  "Cybersecurity Enthusiast",
+                  "Problem Solver",
+                ]}
+              />
+            </span>
           </h1>
           <p className="text-lg text-muted mb-8 max-w-lg leading-relaxed">
             Turning real-world problems into impactful digital solutions.
+            Passionate about building scalable applications with modern
+            technologies.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -66,13 +77,10 @@ export default function Hero() {
           className="relative flex justify-center"
         >
           <div className="relative w-80 h-80 md:w-[500px] md:h-[500px]">
-            {/* Using a placeholder if p.png is not perfect, but assuming p.png is the profile pic */}
-            {/* Check if /assets/p.png exists or use a generic one if missing. Copy command runs async so might race. */}
-            {/* I will assume it moves correctly. */}
             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full opacity-20 blur-2xl animate-pulse"></div>
             <Image
               src="/assets/p.png"
-              alt="profile pic"
+              alt="Saad Tahir"
               fill
               className="object-cover rounded-full border-4 border-white/10 shadow-2xl z-10"
               priority
