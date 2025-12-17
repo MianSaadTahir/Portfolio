@@ -158,11 +158,6 @@ const skills: { category: string; items: SkillItem[] }[] = [
         darkIcon: "devicon-vscode-plain colored",
       },
       {
-        name: "WebStorm",
-        lightIcon: "devicon-webstorm-plain colored",
-        darkIcon: "devicon-webstorm-plain colored",
-      },
-      {
         name: "Postman",
         lightIcon: "devicon-postman-plain colored",
         darkIcon: "devicon-postman-plain colored",
