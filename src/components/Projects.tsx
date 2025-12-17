@@ -121,11 +121,11 @@ export default function Projects() {
                   <h3 className="text-xl md:text-2xl font-bold mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-xs font-semibold text-primary uppercase tracking-wider">
+                  <p className="text-xs md:text-sm font-semibold text-primary uppercase tracking-wider">
                     {project.tech}
                   </p>
                 </div>
-                <p className="text-muted text-sm md:text-base leading-relaxed mb-6">
+                <p className="text-muted text-base md:text-lg leading-relaxed mb-6">
                   {project.description}
                 </p>
               </div>

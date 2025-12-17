@@ -108,7 +108,7 @@ export default function Skills() {
                     <div className="p-4 rounded-xl bg-background border border-white/5 shadow-sm group-hover:border-primary/50 transition-colors flex items-center justify-center w-20 h-20">
                       {typeof skill.icon === "string" ? (
                         <i
-                          className={`${skill.icon} text-4xl block w-full h-full text-center leading-[3rem]`}
+                          className={`${skill.icon} text-5xl block w-full h-full text-center leading-[3rem]`}
                         ></i>
                       ) : (
                         <skill.icon
@@ -117,7 +117,7 @@ export default function Skills() {
                         />
                       )}
                     </div>
-                    <span className="text-xs md:text-sm font-medium text-muted">
+                    <span className="text-sm md:text-base font-medium text-muted">
                       {skill.name}
                     </span>
                   </motion.div>

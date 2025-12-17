@@ -62,22 +62,24 @@ export default function About() {
                   <p className="text-lg md:text-xl leading-relaxed text-muted">
                     As a third-year Computer Science student at the University
                     of Engineering and Technology Lahore, I am passionate about
-                    creating impactful software solutions that blend intelligent
-                    systems with clean, user-focused design.
+                    building practical, impactful software solutions that
+                    combine intelligent systems with clean, user-focused design.
                   </p>
                   <p className="text-lg md:text-xl  leading-relaxed text-muted">
-                    With expertise in Python, C#, JavaScript, and modern web
-                    technologies like Next.js, Tailwind CSS, and Node.js, I
-                    build scalable applications powered by secure APIs and cloud
-                    databases such as Supabase and MongoDB.
+                    With hands-on experience in JavaScript, Python, and PHP, and
+                    modern web technologies such as Next.js, Node.js, Tailwind
+                    CSS, Express, and REST APIs, I develop scalable full-stack
+                    applications backed by Supabase and MongoDB, with a strong
+                    focus on authentication, data flow, and system architecture.
                   </p>
                   <p className="text-lg md:text-xl leading-relaxed text-muted">
-                    My projects span AI-driven recipe generators, deep learning
-                    price predictors, cybersecurity tools, and desktop
-                    systems—demonstrating strong foundations in OOP, DSA, and
-                    database design. I strive to write clean, efficient code
-                    while continuously exploring emerging technologies to
-                    deliver meaningful solutions.
+                    My projects include AI-powered web applications, automation
+                    workflows (n8n), deep learning–based predictors,
+                    cybersecurity and systems tools, and full-stack CRUD
+                    platforms, reflecting solid foundations in OOP, DSA,
+                    database design, and operating systems. I emphasize clean,
+                    modular code and continuously refine my skills by applying
+                    emerging technologies to real-world problems.
                   </p>
                 </motion.div>
               )}

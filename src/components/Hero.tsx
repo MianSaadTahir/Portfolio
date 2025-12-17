@@ -47,8 +47,8 @@ export default function Hero() {
             </span>
           </h1>
           <p className="text-base md:text-lg text-muted mb-8 max-w-lg leading-relaxed">
-            Turning real-world problems into impactful digital solutions.
-            Passionate about building scalable applications with modern
+            I turn real-world problems into impactful digital solutions. I am
+            passionate about building scalable applications with modern
             technologies.
           </p>
 
