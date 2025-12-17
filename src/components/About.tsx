@@ -57,24 +57,30 @@ export default function About() {
           </motion.div>
 
           {/* Education Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="mx-auto"
-          >
-            <div className="flex items-center gap-4 mb-5 md:mb-8">
+          <div className="mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="flex items-center gap-4 mb-5 md:mb-8"
+            >
               <div className="bg-primary/10 p-3 rounded-xl">
                 <GraduationCap className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-foreground">
                 Education
               </h3>
-            </div>
+            </motion.div>
 
             <div className="grid gap-6">
-              <div className="bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1"
+              >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
                   <div>
                     <h4 className="text-lg md:text-xl font-bold text-foreground ">
@@ -87,9 +93,15 @@ export default function About() {
                   </div>
                 </div>
                 <p className="text-foreground/80">CGPA: 3.5</p>
-              </div>
+              </motion.div>
 
-              <div className="bg-white dark:bg-card p-5 md:p-8  rounded-3xl border border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className="bg-white dark:bg-card p-5 md:p-8  rounded-3xl border border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1"
+              >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
                   <div>
                     <h4 className="text-lg md:text-xl font-bold text-foreground">
@@ -104,29 +116,35 @@ export default function About() {
                   </div>
                 </div>
                 <p className="text-foreground/80">Grade: A+</p>
-              </div>
+              </motion.div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Experience Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mx-auto"
-          >
-            <div className="flex items-center gap-4 mb-5 md:mb-8">
+          <div className="mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="flex items-center gap-4 mb-5 md:mb-8"
+            >
               <div className="bg-secondary/10 p-3 rounded-xl">
                 <Briefcase className="w-6 h-6 text-secondary" />
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-foreground">
                 Experience
               </h3>
-            </div>
+            </motion.div>
 
             <div className="grid gap-6">
-              <div className="bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
+              >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
                   <div>
                     <h4 className="text-lg md:text-xl font-bold text-foreground">
@@ -143,9 +161,15 @@ export default function About() {
                   authentication, scalable APIs, secure uploads, optimized
                   processing, and video clipping functionality.
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                className="bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
+              >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
                   <div>
                     <h4 className="text-lg md:text-xl font-bold text-foreground">
@@ -162,9 +186,15 @@ export default function About() {
                   CSS, Google AI via n8n, and scalable data storage using
                   Supabase and MongoDB.
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.7 }}
+                className="bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
+              >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
                   <div>
                     <h4 className="text-lg md:text-xl font-bold text-foreground">
@@ -181,9 +211,9 @@ export default function About() {
                   Wireshark, sqlmap, and XSS testing to identify vulnerabilities
                   and extract sensitive data.
                 </p>
-              </div>
+              </motion.div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
