@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 
 export function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
 
   React.useEffect(() => {
@@ -19,7 +19,7 @@ export function ThemeToggle() {
 
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       className="relative p-2 rounded-full hover:bg-muted/10 transition-colors"
       aria-label="Toggle Theme"
     >
@@ -27,8 +27,8 @@ export function ThemeToggle() {
         <motion.div
           initial={false}
           animate={{
-            scale: theme === "dark" ? 1 : 0,
-            rotate: theme === "dark" ? 0 : 90,
+            scale: resolvedTheme === "dark" ? 1 : 0,
+            rotate: resolvedTheme === "dark" ? 0 : 90,
           }}
           transition={{ duration: 0.2 }}
           className="absolute inset-0 flex items-center justify-center"
@@ -38,8 +38,8 @@ export function ThemeToggle() {
         <motion.div
           initial={false}
           animate={{
-            scale: theme === "light" ? 1 : 0,
-            rotate: theme === "light" ? 0 : -90,
+            scale: resolvedTheme === "light" ? 1 : 0,
+            rotate: resolvedTheme === "light" ? 0 : -90,
           }}
           transition={{ duration: 0.2 }}
           className="absolute inset-0 flex items-center justify-center"
