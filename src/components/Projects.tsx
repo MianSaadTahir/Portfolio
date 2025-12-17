@@ -60,6 +60,33 @@ const projects = [
     github: "https://github.com/MianSaadTahir/Escape-Plan",
     live: null,
   },
+  {
+    title: "Solitaire",
+    tech: "Python · Pygame",
+    description:
+      "A Python implementation of Klondike Solitaire with a Pygame interface, featuring tableau columns, stock and foundation piles, using data structures like stacks, queues, and linked lists.",
+    image: "/assets/solitaire.jpeg",
+    github: "https://github.com/MianSaadTahir/Solitaire",
+    live: null,
+  },
+  {
+    title: "Five Star Hostel",
+    tech: "C# · Windows Forms · MSSQL",
+    description:
+      "A Windows Forms hostel management system developed in C# with MS SQL Server. It features distinct functionalities for students, resident tutors, and senior wardens.",
+    image: "/assets/hostel.png",
+    github: "https://github.com/MianSaadTahir/Five-Star-Hostel",
+    live: null,
+  },
+  {
+    title: "Auto Shade",
+    tech: "ESP32 · Arduino · MQTT · Python",
+    description:
+      "A hybrid IoT system using ESP32 and Arduino Uno to detect rain, transmit sensor data via MQTT, and control a servo-operated shade with live LCD updates.",
+    image: "/assets/autoshade.png",
+    github: "https://github.com/MianSaadTahir/IOT-AutoShade",
+    live: null,
+  },
 ];
 
 export default function Projects() {
