@@ -80,19 +80,29 @@ export default function Skills() {
   return (
     <section id="skills" className="py-20 bg-black/5 dark:bg-white/5">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">Technical Skills</span>
           </h2>
           <p className="text-base md:text-lg text-muted max-w-2xl mx-auto">
             Tools and technologies I use to bring ideas to life.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid gap-8">
           {skills.map((category, idx) => (
-            <div
+            <motion.div
               key={idx}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="bg-white dark:bg-card rounded-2xl p-5 md:p-8 border border-white/5 shadow-sm"
             >
               <h3 className="text-xl md:text-2xl font-bold mb-6 text-foreground">
@@ -123,7 +133,7 @@ export default function Skills() {
                   </motion.div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

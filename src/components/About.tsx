@@ -1,43 +1,49 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, Briefcase, User } from "lucide-react";
+import { GraduationCap, Briefcase } from "lucide-react";
 
 export default function About() {
   return (
     <section id="about" className="py-20 relative">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
           <h2 className="text-4xl md:text-5xl font-bold mb-5">
             <span className="text-gradient">About Me</span>
           </h2>
-        </div>
+        </motion.div>
 
         <div className="space-y-24">
           {/* Bio Section */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.6 }}
             className="mx-auto"
           >
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="space-y-6">
-                <p className="text-lg md:text-xl leading-relaxed text-foreground/90 text-justify">
+                <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
                   As a third-year Computer Science student at the University of
                   Engineering and Technology Lahore, I am passionate about
                   building practical, impactful software solutions that combine
                   intelligent systems with clean, user-focused design.
                 </p>
-                <p className="text-lg md:text-xl leading-relaxed text-foreground/90 text-justify">
+                <p className="text-lg md:text-xl leading-relaxed text-foreground/90 ">
                   With hands-on experience in JavaScript, Python, and PHP, and
                   modern web technologies such as Next.js, Node.js, Tailwind
                   CSS, Express, and REST APIs, I develop scalable full-stack
                   applications backed by Supabase and MongoDB, with a strong
                   focus on authentication, data flow, and system architecture.
                 </p>
-                <p className="text-lg md:text-xl leading-relaxed text-foreground/90 text-justify">
+                <p className="text-lg md:text-xl leading-relaxed text-foreground/90 ">
                   My projects include AI-powered web applications, automation
                   workflows (n8n), deep learning–based predictors, cybersecurity
                   and systems tools, and full-stack CRUD platforms, reflecting
@@ -52,10 +58,10 @@ export default function About() {
 
           {/* Education Section */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="mx-auto"
           >
             <div className="flex items-center gap-4 mb-5 md:mb-8">
@@ -104,10 +110,10 @@ export default function About() {
 
           {/* Experience Section */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
             className="mx-auto"
           >
             <div className="flex items-center gap-4 mb-5 md:mb-8">

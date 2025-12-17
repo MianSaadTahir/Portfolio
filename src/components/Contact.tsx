@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { Mail, Linkedin, Github } from "lucide-react";
 
 export default function Contact() {
@@ -9,7 +10,13 @@ export default function Contact() {
       id="contact"
       className="py-20 bg-gradient-to-b from-transparent to-primary/5"
     >
-      <div className="container mx-auto px-6 md:px-12 text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="container mx-auto px-6 md:px-12 text-center"
+      >
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           <span className="text-gradient">Get In Touch</span>
         </h2>
@@ -47,7 +54,7 @@ export default function Contact() {
             &copy; {new Date().getFullYear()} Saad Tahir. All rights reserved.
           </p>
         </footer>
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -23,7 +23,8 @@ export default function Hero() {
         {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20">
@@ -72,7 +73,8 @@ export default function Hero() {
         {/* Image/Visual content */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative flex justify-center"
         >
