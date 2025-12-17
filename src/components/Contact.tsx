@@ -100,7 +100,7 @@ export default function Contact() {
 
           <motion.footer
             variants={itemVariants}
-            className="border-t border-black/10 dark:border-white/10 pt-8"
+            className="border-t border-black/50 dark:border-white/10 pt-8"
           >
             <p className="text-xs md:text-sm text-muted">
               &copy; {new Date().getFullYear()} Saad Tahir. All rights reserved.
