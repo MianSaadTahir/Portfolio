@@ -116,7 +116,7 @@ export default function Projects() {
                 </div>
               </div>
 
-              <div className="p-8">
+              <div className="p-5 md:p-8 ">
                 <div className="mb-4">
                   <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">
                     {project.title}
