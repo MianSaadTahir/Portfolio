@@ -8,55 +8,55 @@ import { Github, ExternalLink } from "lucide-react";
 const projects = [
   {
     title: "Recipe Generator",
-    tech: "Next.js, n8n, Supabase, MongoDB",
+    tech: "Next.js · n8n · Supabase · MongoDB",
     description:
       "A full-stack AI web app that generates personalized recipes using Gemini AI via n8n workflows, with preferences stored in MongoDB and recipes managed in Supabase.",
-    image: "/assets/recipe.jpg",
+    image: "/assets/recipe.jpeg",
     github: "https://github.com/MianSaadTahir/Nexium_Saad_Internship",
     live: "https://nexium-saad-grand-project.vercel.app/",
   },
   {
     title: "Price My Ride",
-    tech: "Flask, TensorFlow, Scikit-Learn",
+    tech: "Flask · TensorFlow · Scikit-Learn",
     description:
       "A Flask web app that predicts used car prices with a custom-trained deep neural network, featuring data preprocessing, visualizations, and model evaluation.",
-    image: "/assets/pricemyride.jpg",
+    image: "/assets/price.jpeg",
     github: "https://github.com/MianSaadTahir/Price-My-Ride",
     live: null,
   },
   {
-    title: "Threat Guard",
-    tech: "Python, Flask, SQLite",
+    title: "LabSync AI",
+    tech: "Next.js · Node.js · Socket.io ",
     description:
-      "A Flask-based security app that scans URLs, files, and QR codes for malware, checks breached credentials, and tests IP blocking with DoS simulations.",
-    image: "/assets/threatguard.jpg",
-    github: "https://github.com/MianSaadTahir/Threat-Guard",
+      "An AI-powered system that extracts project requirements from Telegram messages, creates optimized budgets, and tracks budget allocations in real time.",
+    image: "/assets/labsync.jpeg",
+    github: "https://github.com/MianSaadTahir/LabSync-AI",
     live: null,
   },
   {
     title: "Video Nexus",
-    tech: "HTML, CSS, JavaScript",
+    tech: "HTML · CSS · JavaScript",
     description:
       "A YouTube-inspired video platform that provides a responsive UI, category-based browsing, and custom playback controls built in JavaScript.",
-    image: "/assets/videonexus1.jpg",
+    image: "/assets/video.png",
     github: "https://github.com/MianSaadTahir/VideoNexus",
     live: "https://videonexus.netlify.app/",
   },
   {
-    title: "Nike Store",
-    tech: "C#, MSSQL, Windows Forms",
+    title: "Threat Guard",
+    tech: "Python · Flask · SQLite",
     description:
-      "A retail inventory system that enables admin and customer modules to manage products, orders, and feedback through a WinForms interface backed by MSSQL.",
-    image: "/assets/nikeStore1.jpg",
-    github: "https://github.com/MianSaadTahir/Nike-Store",
+      "A Flask-based security app that scans URLs, files, and QR codes for malware, checks breached credentials, and tests IP blocking with DoS simulations.",
+    image: "/assets/threat.jpeg",
+    github: "https://github.com/MianSaadTahir/Threat-Guard",
     live: null,
   },
   {
     title: "Escape Plan",
-    tech: "C#, Windows Forms",
+    tech: "C# · Windows Forms",
     description:
       "A 2D shooter game that showcases OOP principles (Singleton, Enums, Interfaces) with a modular DLL-based structure, navigation controls, and a dynamic health system.",
-    image: "/assets/escapePlan1.jpg",
+    image: "/assets/escape.jpeg",
     github: "https://github.com/MianSaadTahir/Escape-Plan",
     live: null,
   },
