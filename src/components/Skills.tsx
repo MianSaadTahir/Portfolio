@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 
 type SkillItem = {
   name: string;
-  icon: string | React.ElementType;
-  color?: string;
+  icon: string;
 };
 
 const skills: { category: string; items: SkillItem[] }[] = [
@@ -14,13 +13,10 @@ const skills: { category: string; items: SkillItem[] }[] = [
     items: [
       { name: "JavaScript", icon: "devicon-javascript-plain colored" },
       { name: "React", icon: "devicon-react-original colored" },
-      {
-        name: "Next.js",
-        icon: "devicon-nextjs-original-wordmark dark:text-white",
-      }, // Next.js is black, needs inversion or plain
+      { name: "Next.js", icon: "devicon-nextjs-plain" },
       { name: "HTML5", icon: "devicon-html5-plain colored" },
       { name: "CSS3", icon: "devicon-css3-plain colored" },
-      { name: "Tailwind", icon: "devicon-tailwindcss-original" },
+      { name: "Tailwind", icon: "devicon-tailwindcss-original colored" },
       { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
     ],
   },
@@ -28,12 +24,12 @@ const skills: { category: string; items: SkillItem[] }[] = [
     category: "Backend",
     items: [
       { name: "Node.js", icon: "devicon-nodejs-plain colored" },
-      { name: "Express", icon: "devicon-express-original dark:text-white" },
+      { name: "Express", icon: "devicon-express-original" },
       { name: "PHP", icon: "devicon-php-plain colored" },
       { name: "Python", icon: "devicon-python-plain colored" },
       { name: "C++", icon: "devicon-cplusplus-plain colored" },
       { name: "C#", icon: "devicon-csharp-plain colored" },
-      { name: "Flask", icon: "devicon-flask-original dark:text-white" },
+      { name: "Flask", icon: "devicon-flask-original" },
     ],
   },
   {
@@ -68,15 +64,27 @@ const skills: { category: string; items: SkillItem[] }[] = [
   {
     category: "Collaboration",
     items: [
-      { name: "GitHub", icon: "devicon-github-original dark:text-white" },
+      { name: "GitHub", icon: "devicon-github-original" },
       { name: "Trello", icon: "devicon-trello-plain colored" },
-      { name: "Notion", icon: "devicon-notion-plain colored" },
+      { name: "Notion", icon: "devicon-notion-plain" },
       { name: "Slack", icon: "devicon-slack-plain colored" },
     ],
   },
 ];
 
 export default function Skills() {
+  const categoryVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
     <section id="skills" className="py-20 bg-black/5 dark:bg-white/5">
       <div className="container mx-auto px-6 md:px-12">
@@ -84,7 +92,7 @@ export default function Skills() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -96,38 +104,39 @@ export default function Skills() {
         </motion.div>
 
         <div className="grid gap-8">
-          {skills.map((category, idx) => (
+          {skills.map((category, categoryIdx) => (
             <motion.div
-              key={idx}
+              key={categoryIdx}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-white dark:bg-card rounded-2xl p-5 md:p-8 border border-white/5 shadow-sm"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5 }}
+              className="bg-white dark:bg-card rounded-2xl p-5 md:p-8 border border-black/5 dark:border-white/5 shadow-sm"
             >
               <h3 className="text-xl md:text-2xl font-bold mb-6 text-foreground">
                 {category.category}
               </h3>
               <div className="flex flex-wrap gap-6 justify-center md:justify-start">
-                {category.items.map((skill) => (
+                {category.items.map((skill, skillIdx) => (
                   <motion.div
                     key={skill.name}
-                    whileHover={{ scale: 1.1 }}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 0.3,
+                      delay: skillIdx * 0.08,
+                      ease: "easeOut",
+                    }}
+                    whileHover={{ scale: 1.1, y: -5 }}
                     className="flex flex-col items-center gap-2 group cursor-pointer"
                   >
-                    <div className="p-4 rounded-xl bg-background border border-white/5 shadow-sm group-hover:border-primary/50 transition-colors flex items-center justify-center w-20 h-20">
-                      {typeof skill.icon === "string" ? (
-                        <i
-                          className={`${skill.icon} text-5xl block w-full h-full text-center leading-[3rem]`}
-                        ></i>
-                      ) : (
-                        <skill.icon
-                          className="w-10 h-10 transition-colors"
-                          style={{ color: skill.color }}
-                        />
-                      )}
+                    <div className="p-4 rounded-xl bg-background border border-black/5 dark:border-white/5 shadow-sm group-hover:border-primary/50 group-hover:shadow-md transition-all flex items-center justify-center w-20 h-20">
+                      <i
+                        className={`${skill.icon} text-5xl text-foreground dark:text-white`}
+                      ></i>
                     </div>
-                    <span className="text-sm md:text-base font-medium text-foreground/80">
+                    <span className="text-sm md:text-base font-medium text-foreground/80 group-hover:text-primary transition-colors">
                       {skill.name}
                     </span>
                   </motion.div>

@@ -63,7 +63,7 @@ export default function Hero() {
             </Link>
             <Link
               href="#contact"
-              className="px-8 py-4 rounded-full border border-primary/30 hover:bg-primary/10 font-bold hover:scale-105 transition-all text-center text-white"
+              className="px-8 py-4 rounded-full border border-primary/30 hover:bg-primary/20 font-bold hover:scale-105 transition-all text-center text-foreground"
             >
               Let&apos;s Connect
             </Link>
@@ -84,7 +84,7 @@ export default function Hero() {
               src="/assets/profile.png"
               alt="Saad Tahir"
               fill
-              className="object-cover rounded-full border-4 border-white/10 shadow-2xl z-10"
+              className="object-cover rounded-full border-4 border-primary/10 dark:border-white/10 shadow-2xl z-10"
               priority
             />
           </div>
