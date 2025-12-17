@@ -37,7 +37,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 bg-gradient-to-b from-transparent to-primary/5"
+      className="py-20 bg-linear-to-b from-transparent to-primary/5"
     >
       <div className="container mx-auto px-6 md:px-12 text-center">
         <motion.div

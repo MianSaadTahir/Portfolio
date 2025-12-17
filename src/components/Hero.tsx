@@ -27,7 +27,7 @@ export default function Hero() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="inline-block px-3 py-1 mb-4 rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20">
+          <div className="inline-block px-3 py-1 mb-4 rounded-full bg-linear-to-r from-primary/10 to-secondary/10 border border-primary/20">
             <span className="text-xs md:text-xs font-bold tracking-wider text-primary uppercase">
               Design &middot; Develop &middot; Deliver
             </span>
@@ -57,7 +57,7 @@ export default function Hero() {
             <Link
               href="/assets/Resume.pdf"
               target="_blank"
-              className="px-8 py-4 rounded-full bg-gradient-to-r from-sky-500 to-teal-500 text-white font-bold shadow-lg shadow-primary/30  hover:shadow-xl hover:scale-105 transition-all text-center"
+              className="px-8 py-4 rounded-full bg-linear-to-r from-sky-500 to-teal-500 text-white font-bold shadow-lg shadow-primary/30  hover:shadow-xl hover:scale-105 transition-all text-center"
             >
               Resume
             </Link>
@@ -79,7 +79,7 @@ export default function Hero() {
           className="relative flex justify-center"
         >
           <div className="relative w-80 h-80 md:w-[500px] md:h-[500px]">
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full opacity-20 blur-2xl animate-pulse [animation-duration:3s]"></div>
+            <div className="absolute inset-0 bg-linear-to-tr from-primary to-secondary rounded-full opacity-20 blur-2xl animate-pulse [animation-duration:3s]"></div>
             <Image
               src="/assets/profile.png"
               alt="Saad Tahir"
