@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8fafc; /* Slate 50 */
+  --foreground: #0f172a; /* Slate 900 */
 
-  /* Brand Colors - Light Mode (vibrant but readable) */
-  --primary: #4338ca; /* Indigo 700 */
-  --secondary: #db2777; /* Pink 600 */
-  --accent: #7c3aed; /* Violet 600 */
+  /* Brand Colors - Light Mode */
+  --primary: #0284c7; /* Sky 600 */
+  --secondary: #0d9488; /* Teal 600 */
+  --accent: #6366f1; /* Indigo 500 */
 
-  --muted: #64748b;
-  --card: #f8fafc;
+  --muted: #64748b; /* Slate 500 */
+  --card: #ffffff;
 }
 
 @theme inline {
@@ -26,17 +26,17 @@
   --font-body: var(--font-jakarta);
 }
 
-/* Dark Mode Overrides - Activated by .dark class */
+/* Dark Mode Overrides */
 .dark {
-  --background: #050510; /* Deepest Indigo/Black */
-  --foreground: #f8fafc;
+  --background: #020617; /* Slate 950 */
+  --foreground: #f1f5f9; /* Slate 100 */
 
-  --primary: #7173e9; /* Indigo 500 */
-  --secondary: #ec4899; /* Pink 500 */
-  --accent: #a78bfa; /* Violet 400 */
+  --primary: #38bdf8; /* Sky 400 */
+  --secondary: #2dd4bf; /* Teal 400 */
+  --accent: #818cf8; /* Indigo 400 */
 
-  --muted: #94a3b8;
-  --card: #0f172a; /* Slate 900 */
+  --muted: #94a3b8; /* Slate 400 */
+  --card: #0b1121; /* Slate 800 - Lighter, blue-grey card */
 }
 
 body {

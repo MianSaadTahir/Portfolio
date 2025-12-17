@@ -83,7 +83,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className="group bg-white dark:bg-[#0f1016] rounded-3xl overflow-hidden border border-white/5 shadow-lg hover:shadow-xl transition-all"
+              className="group bg-white dark:bg-card rounded-3xl overflow-hidden border border-white/5 shadow-lg hover:shadow-xl transition-all"
             >
               <div className="relative h-48 w-full overflow-hidden">
                 <Image

@@ -1,195 +1,179 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { GraduationCap, Briefcase, User } from "lucide-react";
 
-const tabs = [
-  { id: "bio", label: "Bio", icon: User },
-  { id: "education", label: "Education", icon: GraduationCap },
-  { id: "experience", label: "Experience", icon: Briefcase },
-];
-
 export default function About() {
-  const [activeTab, setActiveTab] = useState("bio");
-
   return (
     <section id="about" className="py-20 relative">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-5">
             <span className="text-gradient">About Me</span>
           </h2>
-          <p className="text-base md:text-lg text-muted max-w-2xl mx-auto">
-            My journey through the world of technology and problem solving.
-          </p>
         </div>
 
-        <div className="max-w-4xl mx-auto bg-white dark:bg-[#0f1016] rounded-3xl shadow-2xl overflow-hidden border border-white/5">
-          {/* Tab Navigation */}
-          <div className="flex border-b border-white/5">
-            {tabs.map((tab) => {
-              const Icon = tab.icon;
-              return (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`flex-1 flex items-center justify-center gap-2 py-6 text-xs md:text-lg font-medium transition-all ${
-                    activeTab === tab.id
-                      ? "text-primary bg-primary/10 border-b-2 border-primary"
-                      : "text-foreground/80 hover:text-foreground hover:bg-white/5"
-                  }`}
-                >
-                  <Icon className="w-4 h-4 md:w-5 md:h-5" />
-                  {tab.label}
-                </button>
-              );
-            })}
-          </div>
+        <div className="space-y-24">
+          {/* Bio Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="max-w-4xl mx-auto"
+          >
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="space-y-6">
+                <p className="text-lg md:text-xl leading-relaxed text-foreground/90 text-justify">
+                  As a third-year Computer Science student at the University of
+                  Engineering and Technology Lahore, I am passionate about
+                  building practical, impactful software solutions that combine
+                  intelligent systems with clean, user-focused design.
+                </p>
+                <p className="text-lg md:text-xl leading-relaxed text-foreground/90 text-justify">
+                  With hands-on experience in JavaScript, Python, and PHP, and
+                  modern web technologies such as Next.js, Node.js, Tailwind
+                  CSS, Express, and REST APIs, I develop scalable full-stack
+                  applications backed by Supabase and MongoDB, with a strong
+                  focus on authentication, data flow, and system architecture.
+                </p>
+                <p className="text-lg md:text-xl leading-relaxed text-foreground/90 text-justify">
+                  My projects include AI-powered web applications, automation
+                  workflows (n8n), deep learning–based predictors, cybersecurity
+                  and systems tools, and full-stack CRUD platforms, reflecting
+                  solid foundations in OOP, DSA, database design, and operating
+                  systems. I emphasize clean, modular code and continuously
+                  refine my skills by applying emerging technologies to
+                  real-world problems.
+                </p>
+              </div>
+            </div>
+          </motion.div>
 
-          {/* Tab Content */}
-          <div className="p-8 md:p-12 min-h-[400px]">
-            <AnimatePresence mode="wait">
-              {activeTab === "bio" && (
-                <motion.div
-                  key="bio"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.3 }}
-                  className="space-y-6"
-                >
-                  <p className="text-lg md:text-xl leading-relaxed text-foreground/90 ">
-                    As a third-year Computer Science student at the University
-                    of Engineering and Technology Lahore, I am passionate about
-                    building practical, impactful software solutions that
-                    combine intelligent systems with clean, user-focused design.
-                  </p>
-                  <p className="text-lg md:text-xl  leading-relaxed text-foreground/90 ">
-                    With hands-on experience in JavaScript, Python, and PHP, and
-                    modern web technologies such as Next.js, Node.js, Tailwind
-                    CSS, Express, and REST APIs, I develop scalable full-stack
-                    applications backed by Supabase and MongoDB, with a strong
-                    focus on authentication, data flow, and system architecture.
-                  </p>
-                  <p className="text-lg md:text-xl leading-relaxed text-foreground/90 ">
-                    My projects include AI-powered web applications, automation
-                    workflows (n8n), deep learning–based predictors,
-                    cybersecurity and systems tools, and full-stack CRUD
-                    platforms, reflecting solid foundations in OOP, DSA,
-                    database design, and operating systems. I emphasize clean,
-                    modular code and continuously refine my skills by applying
-                    emerging technologies to real-world problems.
-                  </p>
-                </motion.div>
-              )}
+          {/* Education Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="max-w-4xl mx-auto"
+          >
+            <div className="flex items-center gap-4 mb-8">
+              <div className="bg-primary/10 p-3 rounded-xl">
+                <GraduationCap className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-3xl font-bold text-foreground">Education</h3>
+            </div>
 
-              {activeTab === "education" && (
-                <motion.div
-                  key="education"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.3 }}
-                  className="space-y-8"
-                >
-                  <div className="relative pl-8 border-l-2 border-primary/20">
-                    <div className="absolute top-0 left-[-9px] w-4 h-4 rounded-full bg-primary ring-4 ring-background"></div>
-                    <span className="block text-sm md:text-base text-primary font-bold mb-1">
-                      2023 - 2027
-                    </span>
-                    <h3 className="text-lg md:text-xl font-bold mb-1 text-foreground">
+            <div className="grid gap-6">
+              <div className="bg-white dark:bg-card p-8 rounded-3xl border border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                  <div>
+                    <h4 className="text-xl font-bold text-foreground">
                       Bachelor of Science in Computer Science
-                    </h3>
-                    <p className="text-sm md:text-base text-foreground/90 font-medium">
-                      UET, Lahore
-                    </p>
-                    <p className="text-sm md:text-base text-foreground/80">
-                      CGPA: 3.5
-                    </p>
+                    </h4>
+                    <p className="text-primary font-medium">UET, Lahore</p>
                   </div>
-                  <div className="relative pl-8 border-l-2 border-primary/20">
-                    <div className="absolute top-0 left-[-9px] w-4 h-4 rounded-full bg-muted ring-4 ring-background"></div>
-                    <span className="block text-sm md:text-base text-muted font-bold mb-1">
-                      2021 - 2023
-                    </span>
-                    <h3 className="text-lg md:text-xl font-bold mb-1 text-foreground">
+                  <div className="text-sm font-bold bg-primary/10 text-primary px-4 py-1.5 rounded-full w-fit">
+                    2023 - 2027
+                  </div>
+                </div>
+                <p className="text-muted">CGPA: 3.5</p>
+              </div>
+
+              <div className="bg-white dark:bg-card p-8 rounded-3xl border border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                  <div>
+                    <h4 className="text-xl font-bold text-foreground">
                       Intermediate in Computer Science
-                    </h3>
-                    <p className="text-sm md:text-base  text-foreground/90 font-medium">
+                    </h4>
+                    <p className="text-primary font-medium">
                       KIPS College, Lahore
                     </p>
-                    <p className="text-sm md:text-base text-foreground/80">
-                      Grade: A+
-                    </p>
                   </div>
-                </motion.div>
-              )}
+                  <div className="text-sm font-bold bg-muted/20 text-muted px-4 py-1.5 rounded-full w-fit">
+                    2021 - 2023
+                  </div>
+                </div>
+                <p className="text-muted">Grade: A+</p>
+              </div>
+            </div>
+          </motion.div>
 
-              {activeTab === "experience" && (
-                <motion.div
-                  key="experience"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.3 }}
-                  className="space-y-8"
-                >
-                  <div className="relative pl-8 border-l-2 border-secondary/20">
-                    <div className="absolute top-0 left-[-9px] w-4 h-4 rounded-full bg-secondary ring-4 ring-background"></div>
-                    <span className="block text-sm md:text-base text-secondary font-bold mb-1">
-                      Sep 2025 - Oct 2025
-                    </span>
-                    <h3 className="text-xl font-bold mb-1 text-foreground">
+          {/* Experience Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="max-w-4xl mx-auto"
+          >
+            <div className="flex items-center gap-4 mb-8">
+              <div className="bg-secondary/10 p-3 rounded-xl">
+                <Briefcase className="w-6 h-6 text-secondary" />
+              </div>
+              <h3 className="text-3xl font-bold text-foreground">Experience</h3>
+            </div>
+
+            <div className="grid gap-6">
+              <div className="bg-white dark:bg-card p-8 rounded-3xl border border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                  <div>
+                    <h4 className="text-xl font-bold text-foreground">
                       Backend Developer Intern
-                    </h3>
-                    <p className="text-sm md:text-base  text-foreground/90 font-medium mb-2">
-                      Codev Digital
-                    </p>
-                    <p className="text-base md:text-lg  text-foreground/80 leading-relaxed">
-                      Developed Pod-Clip Pro, a full-stack Next.js app with JWT
-                      authentication, scalable APIs, secure uploads, optimized
-                      processing, and video clipping functionality.
-                    </p>
+                    </h4>
+                    <p className="text-secondary font-medium">Codev Digital</p>
                   </div>
-                  <div className="relative pl-8 border-l-2 border-secondary/20">
-                    <div className="absolute top-0 left-[-9px] w-4 h-4 rounded-full bg-secondary ring-4 ring-background"></div>
-                    <span className="block text-sm md:text-base  text-secondary font-bold mb-1">
-                      Jul 2025 - Aug 2025
-                    </span>
-                    <h3 className="text-xl font-bold mb-1 text-foreground">
+                  <div className="text-sm font-bold bg-secondary/10 text-secondary px-4 py-1.5 rounded-full w-fit">
+                    Sep 2025 - Oct 2025
+                  </div>
+                </div>
+                <p className="text-foreground/80 leading-relaxed">
+                  Developed Pod-Clip Pro, a full-stack Next.js app with JWT
+                  authentication, scalable APIs, secure uploads, optimized
+                  processing, and video clipping functionality.
+                </p>
+              </div>
+
+              <div className="bg-white dark:bg-card p-8 rounded-3xl border border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                  <div>
+                    <h4 className="text-xl font-bold text-foreground">
                       Full-Stack AI Developer Intern
-                    </h3>
-                    <p className="text-sm md:text-base  text-foreground/90 font-medium mb-2">
-                      Nexium
-                    </p>
-                    <p className="text-base md:text-lg  text-foreground/80 leading-relaxed">
-                      Built an AI-powered Recipe Generator with Next.js,
-                      Tailwind CSS, Google AI via n8n, and scalable data storage
-                      using Supabase and MongoDB.
-                    </p>
+                    </h4>
+                    <p className="text-secondary font-medium">Nexium</p>
                   </div>
-                  <div className="relative pl-8 border-l-2 border-secondary/20">
-                    <div className="absolute top-0 left-[-9px] w-4 h-4 rounded-full bg-secondary ring-4 ring-background"></div>
-                    <span className="block text-sm md:text-base  text-secondary font-bold mb-1">
-                      Apr 2025 - May 2025
-                    </span>
-                    <h3 className="text-xl font-bold mb-1 text-foreground">
+                  <div className="text-sm font-bold bg-secondary/10 text-secondary px-4 py-1.5 rounded-full w-fit">
+                    Jul 2025 - Aug 2025
+                  </div>
+                </div>
+                <p className="text-foreground/80 leading-relaxed">
+                  Built an AI-powered Recipe Generator with Next.js, Tailwind
+                  CSS, Google AI via n8n, and scalable data storage using
+                  Supabase and MongoDB.
+                </p>
+              </div>
+
+              <div className="bg-white dark:bg-card p-8 rounded-3xl border border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                  <div>
+                    <h4 className="text-xl font-bold text-foreground">
                       Cyber Security Intern
-                    </h3>
-                    <p className="text-sm md:text-base text-foreground/90 font-medium mb-2">
-                      Hack Secure
-                    </p>
-                    <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
-                      Performed web app security assessments using Nmap,
-                      Gobuster, Wireshark, sqlmap, and XSS testing to identify
-                      vulnerabilities and extract sensitive data.
-                    </p>
+                    </h4>
+                    <p className="text-secondary font-medium">Hack Secure</p>
                   </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
+                  <div className="text-sm font-bold bg-secondary/10 text-secondary px-4 py-1.5 rounded-full w-fit">
+                    Apr 2025 - May 2025
+                  </div>
+                </div>
+                <p className="text-foreground/80 leading-relaxed">
+                  Performed web app security assessments using Nmap, Gobuster,
+                  Wireshark, sqlmap, and XSS testing to identify vulnerabilities
+                  and extract sensitive data.
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -22,21 +22,21 @@ export default function Contact() {
         <div className="flex justify-center gap-8 mb-16">
           <Link
             href="mailto:tahirsaad99@gmail.com"
-            className="p-4 bg-white dark:bg-[#0f1016] rounded-2xl shadow-lg border border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group"
+            className="p-4 bg-white dark:bg-card rounded-2xl shadow-lg border border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group"
           >
             <Mail className="w-8 h-8 text-foreground/90 group-hover:text-primary transition-colors" />
           </Link>
           <Link
             href="https://www.linkedin.com/in/miansaadtahir"
             target="_blank"
-            className="p-4 bg-white dark:bg-[#0f1016] rounded-2xl shadow-lg border border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group"
+            className="p-4 bg-white dark:bg-card rounded-2xl shadow-lg border border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group"
           >
             <Linkedin className="w-8 h-8 text-foreground/90 group-hover:text-secondary transition-colors" />
           </Link>
           <Link
             href="https://github.com/miansaadtahir"
             target="_blank"
-            className="p-4 bg-white dark:bg-[#0f1016] rounded-2xl shadow-lg border border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group"
+            className="p-4 bg-white dark:bg-card rounded-2xl shadow-lg border border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group"
           >
             <Github className="w-8 h-8 text-foreground/90 group-hover:text-accent transition-colors" />
           </Link>

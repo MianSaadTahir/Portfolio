@@ -93,7 +93,7 @@ export default function Skills() {
           {skills.map((category, idx) => (
             <div
               key={idx}
-              className="bg-white dark:bg-[#0f1016] rounded-2xl p-8 border border-white/5 shadow-sm"
+              className="bg-white dark:bg-card rounded-2xl p-8 border border-white/5 shadow-sm"
             >
               <h3 className="text-xl md:text-2xl font-bold mb-6 text-foreground">
                 {category.category}
