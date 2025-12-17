@@ -36,8 +36,8 @@ export default function About() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`flex-1 flex items-center justify-center gap-2 py-6 text-xs md:text-lg font-medium transition-all ${
                     activeTab === tab.id
-                      ? "text-primary bg-primary/5 border-b-2 border-primary"
-                      : "text-muted hover:text-foreground hover:bg-white/5"
+                      ? "text-primary bg-primary/10 border-b-2 border-primary"
+                      : "text-foreground/80 hover:text-foreground hover:bg-white/5"
                   }`}
                 >
                   <Icon className="w-4 h-4 md:w-5 md:h-5" />
@@ -59,20 +59,20 @@ export default function About() {
                   transition={{ duration: 0.3 }}
                   className="space-y-6"
                 >
-                  <p className="text-lg md:text-xl leading-relaxed text-muted">
+                  <p className="text-lg md:text-xl leading-relaxed text-foreground/90 ">
                     As a third-year Computer Science student at the University
                     of Engineering and Technology Lahore, I am passionate about
                     building practical, impactful software solutions that
                     combine intelligent systems with clean, user-focused design.
                   </p>
-                  <p className="text-lg md:text-xl  leading-relaxed text-muted">
+                  <p className="text-lg md:text-xl  leading-relaxed text-foreground/90 ">
                     With hands-on experience in JavaScript, Python, and PHP, and
                     modern web technologies such as Next.js, Node.js, Tailwind
                     CSS, Express, and REST APIs, I develop scalable full-stack
                     applications backed by Supabase and MongoDB, with a strong
                     focus on authentication, data flow, and system architecture.
                   </p>
-                  <p className="text-lg md:text-xl leading-relaxed text-muted">
+                  <p className="text-lg md:text-xl leading-relaxed text-foreground/90 ">
                     My projects include AI-powered web applications, automation
                     workflows (n8n), deep learning–based predictors,
                     cybersecurity and systems tools, and full-stack CRUD
@@ -98,26 +98,30 @@ export default function About() {
                     <span className="block text-sm md:text-base text-primary font-bold mb-1">
                       2023 - 2027
                     </span>
-                    <h3 className="text-lg md:text-xl font-bold mb-1">
+                    <h3 className="text-lg md:text-xl font-bold mb-1 text-foreground">
                       Bachelor of Science in Computer Science
                     </h3>
-                    <p className="text-sm md:text-base text-foreground/80 font-medium">
+                    <p className="text-sm md:text-base text-foreground/90 font-medium">
                       UET, Lahore
                     </p>
-                    <p className="text-sm md:text-base text-muted">CGPA: 3.5</p>
+                    <p className="text-sm md:text-base text-foreground/80">
+                      CGPA: 3.5
+                    </p>
                   </div>
                   <div className="relative pl-8 border-l-2 border-primary/20">
                     <div className="absolute top-0 left-[-9px] w-4 h-4 rounded-full bg-muted ring-4 ring-background"></div>
                     <span className="block text-sm md:text-base text-muted font-bold mb-1">
                       2021 - 2023
                     </span>
-                    <h3 className="text-lg md:text-xl font-bold mb-1">
+                    <h3 className="text-lg md:text-xl font-bold mb-1 text-foreground">
                       Intermediate in Computer Science
                     </h3>
-                    <p className="text-sm md:text-base  text-foreground/80 font-medium">
+                    <p className="text-sm md:text-base  text-foreground/90 font-medium">
                       KIPS College, Lahore
                     </p>
-                    <p className="text-sm md:text-base text-muted">Grade: A+</p>
+                    <p className="text-sm md:text-base text-foreground/80">
+                      Grade: A+
+                    </p>
                   </div>
                 </motion.div>
               )}
@@ -136,13 +140,13 @@ export default function About() {
                     <span className="block text-sm md:text-base text-secondary font-bold mb-1">
                       Sep 2025 - Oct 2025
                     </span>
-                    <h3 className="text-xl font-bold mb-1">
+                    <h3 className="text-xl font-bold mb-1 text-foreground">
                       Backend Developer Intern
                     </h3>
-                    <p className="text-sm md:text-base  text-foreground/80 font-medium mb-2">
+                    <p className="text-sm md:text-base  text-foreground/90 font-medium mb-2">
                       Codev Digital
                     </p>
-                    <p className="text-base md:text-lg  text-muted leading-relaxed">
+                    <p className="text-base md:text-lg  text-foreground/80 leading-relaxed">
                       Developed Pod-Clip Pro, a full-stack Next.js app with JWT
                       authentication, scalable APIs, secure uploads, optimized
                       processing, and video clipping functionality.
@@ -153,13 +157,13 @@ export default function About() {
                     <span className="block text-sm md:text-base  text-secondary font-bold mb-1">
                       Jul 2025 - Aug 2025
                     </span>
-                    <h3 className="text-xl font-bold mb-1">
+                    <h3 className="text-xl font-bold mb-1 text-foreground">
                       Full-Stack AI Developer Intern
                     </h3>
-                    <p className="text-sm md:text-base  text-foreground/80 font-medium mb-2">
+                    <p className="text-sm md:text-base  text-foreground/90 font-medium mb-2">
                       Nexium
                     </p>
-                    <p className="text-base md:text-lg  text-muted leading-relaxed">
+                    <p className="text-base md:text-lg  text-foreground/80 leading-relaxed">
                       Built an AI-powered Recipe Generator with Next.js,
                       Tailwind CSS, Google AI via n8n, and scalable data storage
                       using Supabase and MongoDB.
@@ -170,13 +174,13 @@ export default function About() {
                     <span className="block text-sm md:text-base  text-secondary font-bold mb-1">
                       Apr 2025 - May 2025
                     </span>
-                    <h3 className="text-xl font-bold mb-1">
+                    <h3 className="text-xl font-bold mb-1 text-foreground">
                       Cyber Security Intern
                     </h3>
-                    <p className="text-sm md:text-base text-foreground/80 font-medium mb-2">
+                    <p className="text-sm md:text-base text-foreground/90 font-medium mb-2">
                       Hack Secure
                     </p>
-                    <p className="text-base md:text-lg text-muted leading-relaxed">
+                    <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
                       Performed web app security assessments using Nmap,
                       Gobuster, Wireshark, sqlmap, and XSS testing to identify
                       vulnerabilities and extract sensitive data.

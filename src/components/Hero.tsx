@@ -31,7 +31,7 @@ export default function Hero() {
               Design &middot; Develop &middot; Deliver
             </span>
           </div>
-          <h2 className="text-2xl md:text-3xl font-light text-muted mb-2">
+          <h2 className="text-2xl md:text-3xl font-light text-foreground mb-2">
             Hi There, I&apos;m Saad Tahir
           </h2>
           <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-tight min-h-[3.5em] md:min-h-[2.5em]">
@@ -46,7 +46,7 @@ export default function Hero() {
               />
             </span>
           </h1>
-          <p className="text-base md:text-lg text-muted mb-8 max-w-lg leading-relaxed">
+          <p className="text-base md:text-lg text-foreground/80 mb-8 max-w-lg leading-relaxed">
             I turn real-world problems into impactful digital solutions. I am
             passionate about building scalable applications with modern
             technologies.
@@ -62,7 +62,7 @@ export default function Hero() {
             </Link>
             <Link
               href="#contact"
-              className="px-8 py-4 rounded-full border border-primary/30 hover:bg-primary/5 font-bold hover:scale-105 transition-all text-center dark:text-white"
+              className="px-8 py-4 rounded-full border border-primary/30 hover:bg-primary/10 font-bold hover:scale-105 transition-all text-center text-white"
             >
               Let&apos;s Connect
             </Link>

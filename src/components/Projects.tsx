@@ -98,7 +98,7 @@ export default function Projects() {
                       <Link
                         href={project.github}
                         target="_blank"
-                        className="p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-primary transition-colors"
+                        className="p-2 bg-white/15 rounded-full text-white hover:bg-primary transition-colors"
                       >
                         <Github className="w-5 h-5" />
                       </Link>
@@ -107,7 +107,7 @@ export default function Projects() {
                       <Link
                         href={project.live}
                         target="_blank"
-                        className="p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-secondary transition-colors"
+                        className="p-2 bg-white/15 rounded-full text-white hover:bg-secondary transition-colors"
                       >
                         <ExternalLink className="w-5 h-5" />
                       </Link>
@@ -118,14 +118,14 @@ export default function Projects() {
 
               <div className="p-8">
                 <div className="mb-4">
-                  <h3 className="text-xl md:text-2xl font-bold mb-2">
+                  <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">
                     {project.title}
                   </h3>
                   <p className="text-xs md:text-sm font-semibold text-primary uppercase tracking-wider">
                     {project.tech}
                   </p>
                 </div>
-                <p className="text-muted text-base md:text-lg leading-relaxed mb-6">
+                <p className="text-foreground/80 text-base md:text-lg leading-relaxed mb-6">
                   {project.description}
                 </p>
               </div>

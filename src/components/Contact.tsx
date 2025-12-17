@@ -24,21 +24,21 @@ export default function Contact() {
             href="mailto:tahirsaad99@gmail.com"
             className="p-4 bg-white dark:bg-[#0f1016] rounded-2xl shadow-lg border border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group"
           >
-            <Mail className="w-8 h-8 text-muted group-hover:text-primary transition-colors" />
+            <Mail className="w-8 h-8 text-foreground/90 group-hover:text-primary transition-colors" />
           </Link>
           <Link
             href="https://www.linkedin.com/in/miansaadtahir"
             target="_blank"
             className="p-4 bg-white dark:bg-[#0f1016] rounded-2xl shadow-lg border border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group"
           >
-            <Linkedin className="w-8 h-8 text-muted group-hover:text-secondary transition-colors" />
+            <Linkedin className="w-8 h-8 text-foreground/90 group-hover:text-secondary transition-colors" />
           </Link>
           <Link
             href="https://github.com/miansaadtahir"
             target="_blank"
             className="p-4 bg-white dark:bg-[#0f1016] rounded-2xl shadow-lg border border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group"
           >
-            <Github className="w-8 h-8 text-muted group-hover:text-accent transition-colors" />
+            <Github className="w-8 h-8 text-foreground/90 group-hover:text-accent transition-colors" />
           </Link>
         </div>
 

@@ -95,7 +95,7 @@ export default function Skills() {
               key={idx}
               className="bg-white dark:bg-[#0f1016] rounded-2xl p-8 border border-white/5 shadow-sm"
             >
-              <h3 className="text-xl md:text-2xl font-bold mb-6 text-foreground/80">
+              <h3 className="text-xl md:text-2xl font-bold mb-6 text-foreground">
                 {category.category}
               </h3>
               <div className="flex flex-wrap gap-6 justify-center md:justify-start">
@@ -117,7 +117,7 @@ export default function Skills() {
                         />
                       )}
                     </div>
-                    <span className="text-sm md:text-base font-medium text-muted">
+                    <span className="text-sm md:text-base font-medium text-foreground/80">
                       {skill.name}
                     </span>
                   </motion.div>
