@@ -55,7 +55,7 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href="/public/assets/Resume.pdf"
+              href="/assets/Resume.pdf"
               target="_blank"
               className="px-8 py-4 rounded-full bg-linear-to-r from-sky-500 to-teal-500 text-white font-bold shadow-lg shadow-primary/30  hover:shadow-xl hover:scale-105 transition-all text-center"
             >
