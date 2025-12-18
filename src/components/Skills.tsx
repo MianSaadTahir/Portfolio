@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 type SkillItem = {
   name: string;
-  lightIcon: string; // Shown in Light Mode (usually dark/black or colored)
-  darkIcon: string; // Shown in Dark Mode (usually light/white or colored)
+  lightIcon: string;
+  darkIcon: string;
 };
 
 const skills: { category: string; items: SkillItem[] }[] = [

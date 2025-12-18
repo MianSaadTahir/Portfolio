@@ -120,7 +120,7 @@ export default function Projects() {
                 delay: index * 0.1,
                 ease: "easeOut",
               }}
-              className="will-change-transform group bg-white dark:bg-card rounded-3xl overflow-hidden border border-black/5 dark:border-white/5 shadow-lg hover:shadow-xl transition-all"
+              className="   group bg-white dark:bg-card rounded-3xl overflow-hidden border border-black/5 dark:border-white/5 shadow-lg hover:shadow-xl transition-all"
             >
               <div className="relative h-48 w-full overflow-hidden">
                 <Image

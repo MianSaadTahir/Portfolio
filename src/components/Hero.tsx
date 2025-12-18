@@ -26,7 +26,7 @@ export default function Hero() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="will-change-transform"
+          className="  "
         >
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-linear-to-r from-primary/10 to-secondary/10 border border-primary/20">
             <span className="text-xs md:text-xs font-bold tracking-wider text-primary uppercase">
@@ -77,7 +77,7 @@ export default function Hero() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative flex justify-center will-change-transform"
+          className="relative flex justify-center   "
         >
           <div className="relative w-80 h-80 md:w-[500px] md:h-[500px]">
             <div className="absolute inset-0 bg-linear-to-tr from-primary to-secondary rounded-full opacity-20 blur-2xl animate-pulse [animation-duration:3s]"></div>
