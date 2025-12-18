@@ -25,7 +25,7 @@ A clean, responsive personal portfolio website showcasing projects, skills, educ
 
 ## Live Preview
 
-Click [here](https://miansaadtahir.netlify.app/) to view live demo.
+Click [here](https://miansaadtahir.vercel.app/) to view live demo.
 
 ## Technologies Used
 
