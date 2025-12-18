@@ -26,7 +26,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="mx-auto"
+            className="will-change-transform mx-auto"
           >
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="space-y-6">
@@ -79,7 +79,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1"
+                className="will-change-transform bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
                   <div>
@@ -100,7 +100,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="bg-white dark:bg-card p-5 md:p-8  rounded-3xl border border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1"
+                className="will-change-transform bg-white dark:bg-card p-5 md:p-8  rounded-3xl border border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
                   <div>
@@ -143,7 +143,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
+                className="will-change-transform bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
                   <div>
@@ -168,7 +168,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
+                className="will-change-transform bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
                   <div>
@@ -193,7 +193,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
+                className="will-change-transform bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
                   <div>
