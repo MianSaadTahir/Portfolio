@@ -8,7 +8,7 @@ import { Typewriter } from "@/components/Typewriter";
 export default function Hero() {
   return (
     <section
-      className="relative min-h-screen flex items-center pt-20 overflow-hidden"
+      className="relative min-h-screen flex items-center pt-20 pb-20 overflow-hidden"
       id="home"
     >
       {/* Background blobs */}
@@ -36,7 +36,7 @@ export default function Hero() {
           <h2 className="text-3xl md:text-4xl font-light text-foreground mb-2">
             Hi There, I&apos;m Saad Tahir
           </h2>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight min-h-[3.5em] md:min-h-[2.5em]">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight min-h-[3.5em] md:min-h-[2.5em]">
             <span className="text-primary block">
               <Typewriter
                 words={[
