@@ -25,7 +25,7 @@ export default function About() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
             className="will-change-transform mx-auto"
           >
             <div className="flex flex-col md:flex-row gap-8 items-start">
@@ -62,7 +62,7 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
               className="flex items-center gap-4 mb-5 md:mb-8"
             >
               <div className="bg-primary/10 p-3 rounded-xl">
@@ -126,7 +126,7 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
               className="flex items-center gap-4 mb-5 md:mb-8"
             >
               <div className="bg-secondary/10 p-3 rounded-xl">
@@ -142,7 +142,7 @@ export default function About() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+                transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
                 className="will-change-transform bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
@@ -167,7 +167,7 @@ export default function About() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.3 }}
+                transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
                 className="will-change-transform bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
@@ -192,7 +192,7 @@ export default function About() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.4 }}
+                transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
                 className="will-change-transform bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
