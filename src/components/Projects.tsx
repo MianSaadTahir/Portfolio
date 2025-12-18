@@ -117,7 +117,7 @@ export default function Projects() {
               viewport={{ once: true }}
               transition={{
                 duration: 0.5,
-                delay: index * 0.1,
+                delay: index * 0.01,
                 ease: "easeOut",
               }}
               className="   group bg-white dark:bg-card rounded-3xl overflow-hidden border border-black/5 dark:border-white/5 shadow-lg hover:shadow-xl transition-all"
