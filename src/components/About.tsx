@@ -75,10 +75,10 @@ export default function About() {
 
             <div className="grid gap-6">
               <motion.div
-                initial={{ opacity: 0, y: 5 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.1, delay: 0.2, ease: "easeOut" }}
+                transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
                 className="  bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
@@ -96,10 +96,10 @@ export default function About() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.1, delay: 0.3, ease: "easeOut" }}
+                transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
                 className="  bg-white dark:bg-card p-5 md:p-8  rounded-3xl border border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
@@ -139,10 +139,10 @@ export default function About() {
 
             <div className="grid gap-6">
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.1, delay: 0.2, ease: "easeOut" }}
+                transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
                 className="  bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
@@ -164,10 +164,10 @@ export default function About() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.1, delay: 0.3, ease: "easeOut" }}
+                transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
                 className="  bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
@@ -189,10 +189,10 @@ export default function About() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.1, delay: 0.4, ease: "easeOut" }}
+                transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
                 className=" bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
