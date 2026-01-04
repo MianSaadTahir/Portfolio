@@ -25,12 +25,12 @@ const projects = [
     live: null,
   },
   {
-    title: "LabSync AI",
+    title: "LabSync 360",
     tech: "Next.js · Node.js · Socket.io ",
     description:
       "An AI-powered system that extracts project requirements from Telegram messages, creates optimized budgets, and tracks budget allocations in real time.",
     image: "/assets/labsync.jpeg",
-    github: "https://github.com/MianSaadTahir/LabSync-AI",
+    github: "https://github.com/MianSaadTahir/LabSync360",
     live: null,
   },
   {
