@@ -13,7 +13,7 @@ const projects = [
       "A full-stack AI web app that generates personalized recipes using Gemini AI via n8n workflows, with preferences stored in MongoDB and recipes managed in Supabase.",
     image: "/assets/recipe.jpeg",
     github: "https://github.com/MianSaadTahir/Nexium_Saad_Internship",
-    live: "https://nexium-saad-grand-project.vercel.app/",
+    // live: "https://nexium-saad-grand-project.vercel.app/",
   },
   {
     title: "Price My Ride",
