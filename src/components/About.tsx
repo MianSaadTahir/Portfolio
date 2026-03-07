@@ -157,9 +157,9 @@ export default function About() {
                   </div>
                 </div>
                 <p className="text-foreground/80 text-base md:text-lg  leading-relaxed">
-                  Developed Pod-Clip Pro, a Next.js app with JWT
-                  authentication, scalable APIs, secure uploads, optimized
-                  processing, and video clipping functionality.
+                  Developed Pod-Clip Pro, a Next.js app with JWT authentication,
+                  scalable APIs, secure uploads, optimized processing, and video
+                  clipping functionality.
                 </p>
               </motion.div>
 
@@ -185,31 +185,6 @@ export default function About() {
                   Built an AI-powered Recipe Generator with Next.js, Tailwind
                   CSS, Google AI via n8n, and scalable data storage using
                   Supabase and MongoDB.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
-                className=" bg-white dark:bg-card p-5 md:p-8 rounded-3xl border border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
-              >
-                <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
-                  <div>
-                    <h4 className="text-lg md:text-xl font-bold text-foreground">
-                      Cyber Security Intern
-                    </h4>
-                    <p className="text-secondary font-medium">Hack Secure</p>
-                  </div>
-                  <div className="text-sm font-bold bg-secondary/10 text-secondary px-4 py-1.5 rounded-full w-fit">
-                    Apr 2025 - May 2025
-                  </div>
-                </div>
-                <p className="text-foreground/80 text-base md:text-lg  leading-relaxed">
-                  Performed web app security assessments using Nmap, Gobuster,
-                  Wireshark, sqlmap, and XSS testing to identify vulnerabilities
-                  and extract sensitive data.
                 </p>
               </motion.div>
             </div>
