@@ -238,7 +238,7 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5 }}
-              className="bg-white dark:bg-card rounded-2xl p-5 md:p-8 border border-black/5 dark:border-white/5 shadow-sm"
+              className="bg-card rounded-2xl p-5 md:p-8 border border-black/5 dark:border-white/5 shadow-sm"
             >
               <h3 className="text-xl md:text-2xl font-bold mb-6 text-foreground">
                 {category.category}

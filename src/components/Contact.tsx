@@ -57,7 +57,7 @@ export default function Contact() {
             variants={itemVariants}
             className="text-base md:text-lg text-muted max-w-2xl mx-auto mb-12"
           >
-            Let&apos;s connect and build something impactful! 
+            Let&apos;s connect and build something impactful!
           </motion.p>
 
           <motion.div
@@ -67,7 +67,7 @@ export default function Contact() {
             <motion.div variants={iconVariants}>
               <Link
                 href="mailto:tahirsaad99@gmail.com"
-                className="p-4 bg-white dark:bg-card rounded-2xl shadow-lg border border-black/5 dark:border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group block"
+                className="p-4 bg-card rounded-2xl shadow-lg border border-black/5 dark:border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group block"
               >
                 <Mail className="w-7 h-7 md:w-8 md:h-8 text-foreground/90 group-hover:text-primary transition-colors" />
               </Link>
@@ -78,7 +78,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/miansaadtahir"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 bg-white dark:bg-card rounded-2xl shadow-lg border border-black/5 dark:border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group block"
+                className="p-4 bg-card rounded-2xl shadow-lg border border-black/5 dark:border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group block"
               >
                 <Linkedin className="w-7 h-7 md:w-8 md:h-8 text-foreground/90 group-hover:text-secondary transition-colors" />
               </Link>
@@ -89,7 +89,7 @@ export default function Contact() {
                 href="https://github.com/miansaadtahir"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 bg-white dark:bg-card rounded-2xl shadow-lg border border-black/5 dark:border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group block"
+                className="p-4 bg-card rounded-2xl shadow-lg border border-black/5 dark:border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group block"
               >
                 <Github className="w-7 h-7 md:w-8 md:h-8 text-foreground/90 group-hover:text-accent transition-colors" />
               </Link>
