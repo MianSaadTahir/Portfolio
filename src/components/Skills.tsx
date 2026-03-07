@@ -90,6 +90,21 @@ const skills: { category: string; items: SkillItem[] }[] = [
     ],
   },
   {
+    category: "Mobile Development",
+    items: [
+      {
+        name: "Kotlin",
+        lightIcon: "devicon-kotlin-plain colored",
+        darkIcon: "devicon-kotlin-plain colored",
+      },
+      {
+        name: "Android Studio",
+        lightIcon: "devicon-androidstudio-plain colored",
+        darkIcon: "devicon-androidstudio-plain colored",
+      },
+    ],
+  },
+  {
     category: "AI Libraries",
     items: [
       {

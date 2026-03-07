@@ -57,9 +57,7 @@ export default function Contact() {
             variants={itemVariants}
             className="text-base md:text-lg text-muted max-w-2xl mx-auto mb-12"
           >
-            Let&apos;s connect and build something impactful! Whether you have a
-            question or just want to say hi, I&apos;ll try my best to get back
-            to you!
+            Let&apos;s connect and build something impactful! 
           </motion.p>
 
           <motion.div

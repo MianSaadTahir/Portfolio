@@ -92,7 +92,7 @@ export default function About() {
                     2023 - 2027
                   </div>
                 </div>
-                <p className="text-foreground/80">CGPA: 3.5</p>
+                <p className="text-foreground/80">CGPA: 3.5/4.0</p>
               </motion.div>
 
               <motion.div
@@ -157,7 +157,7 @@ export default function About() {
                   </div>
                 </div>
                 <p className="text-foreground/80 text-base md:text-lg  leading-relaxed">
-                  Developed Pod-Clip Pro, a full-stack Next.js app with JWT
+                  Developed Pod-Clip Pro, a Next.js app with JWT
                   authentication, scalable APIs, secure uploads, optimized
                   processing, and video clipping functionality.
                 </p>

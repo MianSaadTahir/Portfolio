@@ -28,7 +28,7 @@ const projects = [
     title: "LabSync 360",
     tech: "Next.js · Node.js · Socket.io ",
     description:
-      "An AI-powered system that extracts project requirements from Telegram messages, creates optimized budgets, and tracks budget allocations in real time.",
+      "An Agentic AI-powered system where specialized agents convert Telegram conversations into structured project plans and real-time budget workflows via an MCP server.",
     image: "/assets/labsync.jpeg",
     github: "https://github.com/MianSaadTahir/LabSync360",
     live: null,
