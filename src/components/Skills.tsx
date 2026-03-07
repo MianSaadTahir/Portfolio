@@ -90,7 +90,7 @@ const skills: { category: string; items: SkillItem[] }[] = [
     ],
   },
   {
-    category: "Mobile Development",
+    category: "Mobile",
     items: [
       {
         name: "Kotlin",

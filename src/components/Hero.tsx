@@ -41,6 +41,7 @@ export default function Hero() {
               <Typewriter
                 words={[
                   "Full Stack Developer",
+                  "Mobile App Developer",
                   "AI/ML Engineer",
                   "Cybersecurity Enthusiast",
                   "Problem Solver",
