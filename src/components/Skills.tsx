@@ -231,10 +231,10 @@ export default function Skills() {
         </motion.div>
 
         <div className="grid gap-8">
-          {skills.map((category, categoryIdx) => (
+          {skills.map((category) => (
             <motion.div
-              key={categoryIdx}
-              initial={{ opacity: 0, y: 30 }}
+              key={category.category}
+              initial={false}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5 }}
