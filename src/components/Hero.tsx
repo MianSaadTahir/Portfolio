@@ -1,8 +1,5 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { Typewriter } from "@/components/Typewriter";
 
 export default function Hero() {
@@ -21,13 +18,7 @@ export default function Hero() {
 
       <div className="container mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-12 items-center">
         {/* Text Content */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="  "
-        >
+        <div data-aos="fade-right" data-aos-duration="800" className="  ">
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-linear-to-r from-primary/10 to-secondary/10 border border-primary/20">
             <span className="text-xs md:text-xs font-bold tracking-wider text-primary uppercase">
               Design &middot; Develop &middot; Deliver
@@ -70,14 +61,13 @@ export default function Hero() {
               Let&apos;s Connect
             </Link>
           </div>
-        </motion.div>
+        </div>
 
         {/* Image/Visual content */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+        <div
+          data-aos="fade-left"
+          data-aos-duration="800"
+          data-aos-delay="200"
           className="relative flex justify-center   "
         >
           <div className="relative w-80 h-80 md:w-[500px] md:h-[500px]">
@@ -90,7 +80,7 @@ export default function Hero() {
               priority
             />
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -1,7 +1,3 @@
-"use client";
-
-import { motion, Variants } from "framer-motion";
-
 type SkillItem = {
   name: string;
   lightIcon: string;
@@ -211,56 +207,24 @@ const skills: { category: string; items: SkillItem[] }[] = [
   },
 ];
 
-const fadeInUpVariants: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-    },
-  },
-};
-
-const scaleVariants: Variants = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: (i: number) => ({
-    opacity: 1,
-    scale: 1,
-    transition: {
-      duration: 0.4,
-      delay: i * 0.08,
-    },
-  }),
-};
-
 export default function Skills() {
   return (
     <section id="skills" className="py-20 bg-black/5 dark:bg-white/5">
       <div className="container mx-auto px-6 md:px-12">
-        <motion.div
-          variants={fadeInUpVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div data-aos="fade-up" className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">Technical Skills</span>
           </h2>
           <p className="text-base md:text-lg text-muted max-w-2xl mx-auto">
             Tools and technologies I use to bring ideas to life.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid gap-8">
           {skills.map((category) => (
-            <motion.div
+            <div
               key={category.category}
-              variants={fadeInUpVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              data-aos="fade-up"
               className="will-change-transform gpu-fix bg-card rounded-2xl p-5 md:p-8 border border-black/5 dark:border-white/5 shadow-sm"
             >
               <h3 className="text-xl md:text-2xl font-bold mb-6 text-foreground">
@@ -268,13 +232,10 @@ export default function Skills() {
               </h3>
               <div className="flex flex-wrap gap-6 justify-center md:justify-start">
                 {category.items.map((skill, skillIdx) => (
-                  <motion.div
+                  <div
                     key={skill.name}
-                    custom={skillIdx}
-                    variants={scaleVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
+                    data-aos="zoom-in"
+                    data-aos-delay={skillIdx * 50}
                     className="flex flex-col items-center gap-2 group cursor-pointer"
                   >
                     <div className="p-4 rounded-xl bg-background border border-black/5 dark:border-white/5 shadow-sm group-hover:border-primary/50 group-hover:shadow-md transition-all flex items-center justify-center w-20 h-20">
@@ -289,10 +250,10 @@ export default function Skills() {
                     <span className="text-sm md:text-base font-medium text-foreground/80 group-hover:text-primary transition-colors">
                       {skill.name}
                     </span>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

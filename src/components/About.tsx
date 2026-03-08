@@ -1,45 +1,18 @@
-"use client";
-
-import { motion, Variants } from "framer-motion";
 import { GraduationCap, Briefcase } from "lucide-react";
-
-const fadeInUpVariants: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  },
-};
 
 export default function About() {
   return (
     <section id="about" className="py-20 relative">
       <div className="container mx-auto px-6 md:px-12">
-        <motion.div
-          variants={fadeInUpVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div data-aos="fade-up" className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-5">
             <span className="text-gradient">About Me</span>
           </h2>
-        </motion.div>
+        </div>
 
         <div className="space-y-24">
           {/* Bio Section */}
-          <motion.div
-            variants={fadeInUpVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className=" mx-auto"
-          >
+          <div data-aos="fade-up" data-aos-delay="200" className=" mx-auto">
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="space-y-6">
                 <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
@@ -66,15 +39,12 @@ export default function About() {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Education Section */}
           <div className="mx-auto">
-            <motion.div
-              variants={fadeInUpVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
+            <div
+              data-aos="fade-up"
               className="flex items-center gap-4 mb-5 md:mb-8"
             >
               <div className="bg-primary/10 p-3 rounded-xl">
@@ -83,14 +53,11 @@ export default function About() {
               <h3 className="text-2xl md:text-3xl font-bold text-foreground">
                 Education
               </h3>
-            </motion.div>
+            </div>
 
             <div className="grid gap-6">
-              <motion.div
-                variants={fadeInUpVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
+              <div
+                data-aos="fade-up"
                 className="will-change-transform gpu-fix bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
@@ -105,13 +72,10 @@ export default function About() {
                   </div>
                 </div>
                 <p className="text-foreground/80">CGPA: 3.5/4.0</p>
-              </motion.div>
+              </div>
 
-              <motion.div
-                variants={fadeInUpVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
+              <div
+                data-aos="fade-up"
                 className="will-change-transform gpu-fix bg-card p-5 md:p-8  rounded-3xl border border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
@@ -128,17 +92,14 @@ export default function About() {
                   </div>
                 </div>
                 <p className="text-foreground/80">Grade: A+</p>
-              </motion.div>
+              </div>
             </div>
           </div>
 
           {/* Experience Section */}
           <div className="mx-auto">
-            <motion.div
-              variants={fadeInUpVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
+            <div
+              data-aos="fade-up"
               className="flex items-center gap-4 mb-5 md:mb-8"
             >
               <div className="bg-secondary/10 p-3 rounded-xl">
@@ -147,14 +108,11 @@ export default function About() {
               <h3 className="text-2xl md:text-3xl font-bold text-foreground">
                 Experience
               </h3>
-            </motion.div>
+            </div>
 
             <div className="grid gap-6">
-              <motion.div
-                variants={fadeInUpVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
+              <div
+                data-aos="fade-up"
                 className="will-change-transform gpu-fix bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
@@ -173,13 +131,10 @@ export default function About() {
                   scalable APIs, secure uploads, optimized processing, and video
                   clipping functionality.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div
-                variants={fadeInUpVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
+              <div
+                data-aos="fade-up"
                 className="will-change-transform gpu-fix bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
@@ -198,7 +153,7 @@ export default function About() {
                   CSS, Google AI via n8n, and scalable data storage using
                   Supabase and MongoDB.
                 </p>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>

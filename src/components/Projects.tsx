@@ -1,8 +1,5 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { motion, Variants } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
@@ -89,45 +86,25 @@ const projects = [
   },
 ];
 
-const fadeInUpVariants: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  },
-};
-
 export default function Projects() {
   return (
     <section id="projects" className="py-20">
       <div className="container mx-auto px-6 md:px-12">
-        <motion.div
-          variants={fadeInUpVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div data-aos="fade-up" className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">Featured Projects</span>
           </h2>
           <p className="text-base md:text-lg text-muted max-w-2xl mx-auto">
             A showcase of my recent work.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            <div
               key={index}
-              variants={fadeInUpVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
               className="will-change-transform gpu-fix group bg-card rounded-3xl overflow-hidden border border-black/5 dark:border-white/5 shadow-lg hover:shadow-xl transition-all"
             >
               <div className="relative h-48 w-full overflow-hidden">
@@ -174,7 +151,7 @@ export default function Projects() {
                   {project.description}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
