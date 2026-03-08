@@ -235,7 +235,7 @@ export default function Skills() {
                   <div
                     key={skill.name}
                     data-aos="zoom-in"
-                    data-aos-delay={skillIdx * 50}
+                    data-aos-delay={skillIdx * 30}
                     className="flex flex-col items-center gap-2 group cursor-pointer"
                   >
                     <div className="p-4 rounded-xl bg-background border border-black/5 dark:border-white/5 shadow-sm group-hover:border-primary/50 group-hover:shadow-md transition-all flex items-center justify-center w-20 h-20">

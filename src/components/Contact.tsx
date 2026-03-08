@@ -20,7 +20,7 @@ export default function Contact() {
           </p>
 
           <div className="flex justify-center gap-6 md:gap-8 mb-16">
-            <div data-aos="zoom-in" data-aos-delay="100">
+            <div data-aos="zoom-in" data-aos-delay="50">
               <Link
                 href="mailto:tahirsaad99@gmail.com"
                 className="p-4 bg-card rounded-2xl shadow-lg border border-black/5 dark:border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group block"
@@ -29,7 +29,7 @@ export default function Contact() {
               </Link>
             </div>
 
-            <div data-aos="zoom-in" data-aos-delay="200">
+            <div data-aos="zoom-in" data-aos-delay="100">
               <Link
                 href="https://www.linkedin.com/in/miansaadtahir"
                 target="_blank"
@@ -40,7 +40,7 @@ export default function Contact() {
               </Link>
             </div>
 
-            <div data-aos="zoom-in" data-aos-delay="300">
+            <div data-aos="zoom-in" data-aos-delay="150">
               <Link
                 href="https://github.com/miansaadtahir"
                 target="_blank"

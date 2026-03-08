@@ -12,7 +12,7 @@ export default function About() {
 
         <div className="space-y-24">
           {/* Bio Section */}
-          <div data-aos="fade-up" data-aos-delay="200" className=" mx-auto">
+          <div data-aos="fade-up" data-aos-delay="100" className=" mx-auto">
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="space-y-6">
                 <p className="text-lg md:text-xl leading-relaxed text-foreground/90">

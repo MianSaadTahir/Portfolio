@@ -67,7 +67,7 @@ export default function Hero() {
         <div
           data-aos="fade-left"
           data-aos-duration="800"
-          data-aos-delay="200"
+          data-aos-delay="100"
           className="relative flex justify-center   "
         >
           <div className="relative w-80 h-80 md:w-[500px] md:h-[500px]">

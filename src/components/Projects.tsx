@@ -104,7 +104,7 @@ export default function Projects() {
             <div
               key={index}
               data-aos="fade-up"
-              data-aos-delay={index * 100}
+              data-aos-delay={index * 50}
               className="will-change-transform gpu-fix group bg-card rounded-3xl overflow-hidden border border-black/5 dark:border-white/5 shadow-lg hover:shadow-xl transition-all"
             >
               <div className="relative h-48 w-full overflow-hidden">

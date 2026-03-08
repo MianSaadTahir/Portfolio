@@ -15,7 +15,7 @@ const Contact = dynamic(() => import("@/components/Contact"), { ssr: false });
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 400,
       once: true,
       easing: "ease-out",
     });
