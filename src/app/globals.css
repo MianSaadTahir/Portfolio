@@ -44,7 +44,9 @@ body {
   color: var(--foreground);
   font-family: var(--font-body), sans-serif;
   overflow-x: hidden;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 /* Custom Scrollbar */
@@ -70,7 +72,18 @@ body {
   background-clip: text;
 }
 
+.will-change-transform {
+  will-change: transform;
+}
 
+.gpu-fix {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
 
 @keyframes blob {
   0% {
