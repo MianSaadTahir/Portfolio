@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
@@ -19,7 +19,7 @@ const projects = [
     title: "Price My Ride",
     tech: "Flask · TensorFlow · Scikit-Learn",
     description:
-      "A Flask web app that predicts used car prices with a custom-trained deep neural network, featuring data preprocessing, visualizations, and model evaluation.",
+      "A Flask web app that predicts used car prices with a custom-trained deep neural neural network, featuring data preprocessing, visualizations, and model evaluation.",
     image: "/assets/price.jpeg",
     github: "https://github.com/MianSaadTahir/Price-My-Ride",
     live: null,
@@ -89,15 +89,27 @@ const projects = [
   },
 ];
 
+const fadeInUpVariants: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
 export default function Projects() {
   return (
     <section id="projects" className="py-20">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={fadeInUpVariants}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -112,10 +124,10 @@ export default function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              variants={fadeInUpVariants}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5 }}
               className="will-change-transform gpu-fix group bg-card rounded-3xl overflow-hidden border border-black/5 dark:border-white/5 shadow-lg hover:shadow-xl transition-all"
             >
               <div className="relative h-48 w-full overflow-hidden">

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 type SkillItem = {
   name: string;
@@ -211,15 +211,38 @@ const skills: { category: string; items: SkillItem[] }[] = [
   },
 ];
 
+const fadeInUpVariants: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
+const scaleVariants: Variants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: (i: number) => ({
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.4,
+      delay: i * 0.08,
+    },
+  }),
+};
+
 export default function Skills() {
   return (
     <section id="skills" className="py-20 bg-black/5 dark:bg-white/5">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={fadeInUpVariants}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -234,10 +257,10 @@ export default function Skills() {
           {skills.map((category) => (
             <motion.div
               key={category.category}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              variants={fadeInUpVariants}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5 }}
               className="will-change-transform gpu-fix bg-card rounded-2xl p-5 md:p-8 border border-black/5 dark:border-white/5 shadow-sm"
             >
               <h3 className="text-xl md:text-2xl font-bold mb-6 text-foreground">
@@ -247,15 +270,11 @@ export default function Skills() {
                 {category.items.map((skill, skillIdx) => (
                   <motion.div
                     key={skill.name}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
+                    custom={skillIdx}
+                    variants={scaleVariants}
+                    initial="hidden"
+                    whileInView="visible"
                     viewport={{ once: true }}
-                    transition={{
-                      duration: 0.4,
-                      delay: skillIdx * 0.08,
-                      ease: "easeOut",
-                    }}
-                    // whileHover={{ scale: 1.1, y: -5 }}
                     className="flex flex-col items-center gap-2 group cursor-pointer"
                   >
                     <div className="p-4 rounded-xl bg-background border border-black/5 dark:border-white/5 shadow-sm group-hover:border-primary/50 group-hover:shadow-md transition-all flex items-center justify-center w-20 h-20">

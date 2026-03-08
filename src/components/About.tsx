@@ -1,17 +1,29 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { GraduationCap, Briefcase } from "lucide-react";
+
+const fadeInUpVariants: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
 
 export default function About() {
   return (
     <section id="about" className="py-20 relative">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={fadeInUpVariants}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-5">
@@ -22,10 +34,10 @@ export default function About() {
         <div className="space-y-24">
           {/* Bio Section */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            variants={fadeInUpVariants}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
             className=" mx-auto"
           >
             <div className="flex flex-col md:flex-row gap-8 items-start">
@@ -59,10 +71,10 @@ export default function About() {
           {/* Education Section */}
           <div className="mx-auto">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              variants={fadeInUpVariants}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
               className="flex items-center gap-4 mb-5 md:mb-8"
             >
               <div className="bg-primary/10 p-3 rounded-xl">
@@ -75,10 +87,10 @@ export default function About() {
 
             <div className="grid gap-6">
               <motion.div
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
+                variants={fadeInUpVariants}
+                initial="hidden"
+                whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.5 }}
                 className="will-change-transform gpu-fix bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
@@ -96,10 +108,10 @@ export default function About() {
               </motion.div>
 
               <motion.div
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
+                variants={fadeInUpVariants}
+                initial="hidden"
+                whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.5 }}
                 className="will-change-transform gpu-fix bg-card p-5 md:p-8  rounded-3xl border border-white/5 shadow-sm hover:border-primary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
@@ -123,10 +135,10 @@ export default function About() {
           {/* Experience Section */}
           <div className="mx-auto">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              variants={fadeInUpVariants}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
               className="flex items-center gap-4 mb-5 md:mb-8"
             >
               <div className="bg-secondary/10 p-3 rounded-xl">
@@ -139,10 +151,10 @@ export default function About() {
 
             <div className="grid gap-6">
               <motion.div
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
+                variants={fadeInUpVariants}
+                initial="hidden"
+                whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.5 }}
                 className="will-change-transform gpu-fix bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
@@ -164,10 +176,10 @@ export default function About() {
               </motion.div>
 
               <motion.div
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
+                variants={fadeInUpVariants}
+                initial="hidden"
+                whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.5 }}
                 className="will-change-transform gpu-fix bg-card p-5 md:p-8 rounded-3xl border border-black/5 dark:border-white/5 shadow-sm hover:border-secondary/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mb-4">
