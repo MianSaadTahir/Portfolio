@@ -30,7 +30,7 @@ export default function About() {
                 </p>
                 <p className="text-lg md:text-xl leading-relaxed text-foreground/90 ">
                   My projects include AI-powered web applications, automation
-                  workflows (n8n), deep learning–based predictors, cybersecurity
+                  workflows (n8n), deep learning based predictors, cybersecurity
                   and systems tools, and full-stack CRUD platforms, reflecting
                   solid foundations in OOP, DSA, database design, and operating
                   systems. I emphasize clean, modular code and continuously
