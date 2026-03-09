@@ -21,15 +21,8 @@ const certifications = [
     title: "Software Engineer Intern",
     issuer: "HackerRank",
     date: "Jun 2025",
-    image: "/assets/se.png", 
+    image: "/assets/se.png",
     link: "https://www.hackerrank.com/certificates/224028b71565",
-  },
-  {
-    title: "SQL (Advanced)",
-    issuer: "HackerRank",
-    date: "Jun 2025",
-    image: "/assets/sql.png", 
-    link: "https://www.hackerrank.com/certificates/bcbf1d571269",
   },
   {
     title: "JavaScript (Intermediate)",
@@ -42,8 +35,15 @@ const certifications = [
     title: "Introduction to Python",
     issuer: "DataCamp",
     date: "Dec 2024",
-    image: "/assets/py.jpg", 
+    image: "/assets/py.jpg",
     link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/89a8d27b54a5d13c7351d2968741a84a5dd524f5#",
+  },
+  {
+    title: "Introduction to Database and SQL",
+    issuer: "Great Learning",
+    date: "Apr 2024",
+    image: "/assets/db.jpg",
+    link: "https://www.mygreatlearning.com/certificate/XMWMZWQY",
   },
 ];
 
