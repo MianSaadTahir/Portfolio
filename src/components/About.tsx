@@ -27,7 +27,7 @@ export default function About() {
                   React, and Node.js to develop full-stack applications.
                   My experience includes managing database systems with MongoDB,
                   MySQL, and Supabase, building machine learning models using
-                  TensorFlow, creating automation workflows with n8n, and
+                  TensorFlow, and Scikit-learn, creating automation workflows with n8n, and
                   developing mobile applications with Kotlin and Android Studio.
                 </p>
                 <p className="text-lg md:text-xl leading-relaxed text-foreground/90 ">
