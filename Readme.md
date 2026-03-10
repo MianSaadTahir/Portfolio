@@ -15,7 +15,7 @@ A clean, responsive personal portfolio website showcasing projects, skills, educ
 ## Features
 
 - **Responsive Design**: Works seamlessly on all devices
-- **Animated UI**: Typing effect and scroll-triggered Framer Motion animations
+- **Animated UI**: Typing effect and scroll-triggered AOS animations
 - **Dark Mode**: Full light/dark theme support with theme aware icons
 
 ## Screenshots
@@ -32,7 +32,6 @@ Click [here](https://miansaadtahir.vercel.app/) to view live demo.
 - Next.js
 - TypeScript
 - Tailwind CSS
-- Framer Motion
 
 ## Usage
 
