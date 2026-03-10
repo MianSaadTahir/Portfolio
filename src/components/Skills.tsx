@@ -24,6 +24,11 @@ const skills: { category: string; items: SkillItem[] }[] = [
         darkIcon: "devicon-nextjs-plain ",
       },
       {
+        name: "Tailwind",
+        lightIcon: "devicon-tailwindcss-original colored",
+        darkIcon: "devicon-tailwindcss-original colored",
+      },
+      {
         name: "HTML5",
         lightIcon: "devicon-html5-plain colored",
         darkIcon: "devicon-html5-plain colored",
@@ -32,11 +37,6 @@ const skills: { category: string; items: SkillItem[] }[] = [
         name: "CSS3",
         lightIcon: "devicon-css3-plain colored",
         darkIcon: "devicon-css3-plain colored",
-      },
-      {
-        name: "Tailwind",
-        lightIcon: "devicon-tailwindcss-original colored",
-        darkIcon: "devicon-tailwindcss-original colored",
       },
       {
         name: "Bootstrap",
@@ -59,11 +59,6 @@ const skills: { category: string; items: SkillItem[] }[] = [
         darkIcon: "devicon-express-original",
       },
       {
-        name: "PHP",
-        lightIcon: "devicon-php-plain colored",
-        darkIcon: "devicon-php-plain colored",
-      },
-      {
         name: "Python",
         lightIcon: "devicon-python-plain colored",
         darkIcon: "devicon-python-plain colored",
@@ -82,6 +77,11 @@ const skills: { category: string; items: SkillItem[] }[] = [
         name: "C#",
         lightIcon: "devicon-csharp-plain colored",
         darkIcon: "devicon-csharp-plain colored",
+      },
+      {
+        name: "PHP",
+        lightIcon: "devicon-php-plain colored",
+        darkIcon: "devicon-php-plain colored",
       },
     ],
   },
@@ -134,24 +134,24 @@ const skills: { category: string; items: SkillItem[] }[] = [
     category: "Databases",
     items: [
       {
-        name: "MySQL",
-        lightIcon: "devicon-mysql-plain colored",
-        darkIcon: "devicon-mysql-plain colored",
-      },
-      {
         name: "MongoDB",
         lightIcon: "devicon-mongodb-plain colored",
         darkIcon: "devicon-mongodb-plain colored",
       },
       {
-        name: "SQLite",
-        lightIcon: "devicon-sqlite-plain colored",
-        darkIcon: "devicon-sqlite-plain colored",
+        name: "MySQL",
+        lightIcon: "devicon-mysql-plain colored",
+        darkIcon: "devicon-mysql-plain colored",
       },
       {
         name: "MSSQL",
         lightIcon: "devicon-microsoftsqlserver-plain colored",
         darkIcon: "devicon-microsoftsqlserver-plain colored",
+      },
+      {
+        name: "SQLite",
+        lightIcon: "devicon-sqlite-plain colored",
+        darkIcon: "devicon-sqlite-plain colored",
       },
       {
         name: "Supabase",
