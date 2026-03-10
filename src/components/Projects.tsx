@@ -31,30 +31,12 @@ const projects = [
     live: null,
   },
   {
-    title: "Video Nexus",
-    tech: "HTML · CSS · JavaScript",
-    description:
-      "A YouTube-inspired video platform that provides a responsive UI, category-based browsing, and custom playback controls built in JavaScript.",
-    image: "/assets/video.png",
-    github: "https://github.com/MianSaadTahir/VideoNexus",
-    live: "https://videonexus.netlify.app/",
-  },
-  {
     title: "Threat Guard",
     tech: "Python · Flask · SQLite",
     description:
       "A Flask-based security app that scans URLs, files, and QR codes for malware, checks breached credentials, and tests IP blocking with DoS simulations.",
     image: "/assets/threat.jpeg",
     github: "https://github.com/MianSaadTahir/Threat-Guard",
-    live: null,
-  },
-  {
-    title: "Escape Plan",
-    tech: "C# · Windows Forms",
-    description:
-      "A 2D shooter game that showcases OOP principles (Singleton, Enums, Interfaces) with a modular DLL-based structure, navigation controls, and a dynamic health system.",
-    image: "/assets/escape.jpeg",
-    github: "https://github.com/MianSaadTahir/Escape-Plan",
     live: null,
   },
   {
@@ -73,15 +55,6 @@ const projects = [
       "A Windows Forms hostel management system developed in C# with MS SQL Server. It features distinct functionalities for students, resident tutors, and senior wardens.",
     image: "/assets/hostel.png",
     github: "https://github.com/MianSaadTahir/Five-Star-Hostel",
-    live: null,
-  },
-  {
-    title: "Auto Shade",
-    tech: "ESP32 · Arduino · MQTT · Python",
-    description:
-      "A hybrid IoT system using ESP32 and Arduino Uno to detect rain, transmit sensor data via MQTT, and control a servo-operated shade with live LCD updates.",
-    image: "/assets/autoshade.png",
-    github: "https://github.com/MianSaadTahir/IOT-AutoShade",
     live: null,
   },
 ];
@@ -125,7 +98,7 @@ export default function Projects() {
                         <Github className="w-5 h-5" />
                       </Link>
                     )}
-                    {project.live && (
+                    {/* {project.live && (
                       <Link
                         href={project.live}
                         target="_blank"
@@ -133,7 +106,7 @@ export default function Projects() {
                       >
                         <ExternalLink className="w-5 h-5" />
                       </Link>
-                    )}
+                    )} */}
                   </div>
                 </div>
               </div>

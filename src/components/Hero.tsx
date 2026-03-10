@@ -33,7 +33,7 @@ export default function Hero() {
                 words={[
                   "Full Stack Developer",
                   "Mobile App Developer",
-                  "AI/ML Engineer",
+                  "AI / ML Engineer",
                   "Cybersecurity Enthusiast",
                   "Problem Solver",
                 ]}

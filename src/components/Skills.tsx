@@ -69,6 +69,11 @@ const skills: { category: string; items: SkillItem[] }[] = [
         darkIcon: "devicon-python-plain colored",
       },
       {
+        name: "Flask",
+        lightIcon: "devicon-flask-original",
+        darkIcon: "devicon-flask-original ",
+      },
+      {
         name: "C++",
         lightIcon: "devicon-cplusplus-plain colored",
         darkIcon: "devicon-cplusplus-plain colored",
@@ -77,11 +82,6 @@ const skills: { category: string; items: SkillItem[] }[] = [
         name: "C#",
         lightIcon: "devicon-csharp-plain colored",
         darkIcon: "devicon-csharp-plain colored",
-      },
-      {
-        name: "Flask",
-        lightIcon: "devicon-flask-original",
-        darkIcon: "devicon-flask-original ",
       },
     ],
   },
@@ -101,7 +101,7 @@ const skills: { category: string; items: SkillItem[] }[] = [
     ],
   },
   {
-    category: "AI Libraries",
+    category: "AI / ML",
     items: [
       {
         name: "TensorFlow",
@@ -153,6 +153,11 @@ const skills: { category: string; items: SkillItem[] }[] = [
         lightIcon: "devicon-microsoftsqlserver-plain colored",
         darkIcon: "devicon-microsoftsqlserver-plain colored",
       },
+      {
+        name: "Supabase",
+        lightIcon: "devicon-supabase-plain colored",
+        darkIcon: "devicon-supabase-plain colored",
+      },
     ],
   },
   {
@@ -169,14 +174,14 @@ const skills: { category: string; items: SkillItem[] }[] = [
         darkIcon: "devicon-vscode-plain colored",
       },
       {
+        name: "JetBrains IDEs",
+        lightIcon: "devicon-jetbrains-plain colored",
+        darkIcon: "devicon-jetbrains-plain colored",
+      },
+      {
         name: "Postman",
         lightIcon: "devicon-postman-plain colored",
         darkIcon: "devicon-postman-plain colored",
-      },
-      {
-        name: "Supabase",
-        lightIcon: "devicon-supabase-plain colored",
-        darkIcon: "devicon-supabase-plain colored",
       },
     ],
   },

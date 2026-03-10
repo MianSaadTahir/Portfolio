@@ -16,26 +16,28 @@ export default function About() {
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="space-y-6">
                 <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
-                  As a third-year Computer Science student at the University of
-                  Engineering and Technology Lahore, I am passionate about
-                  building practical, impactful software solutions that combine
-                  intelligent systems with clean, user-focused design.
+                  I am a Full Stack Developer with 3+ years of experience
+                  building scalable web applications, AI-powered automations,
+                  and robust backend systems. My work focuses on creating
+                  software that is reliable, maintainable, and designed to solve
+                  real-world problems efficiently.
                 </p>
                 <p className="text-lg md:text-xl leading-relaxed text-foreground/90 ">
-                  With hands-on experience in JavaScript, Python, and PHP, and
-                  modern web technologies such as Next.js, Node.js, Tailwind
-                  CSS, Express, and REST APIs, I develop scalable full-stack
-                  applications backed by Supabase and MongoDB, with a strong
-                  focus on authentication, data flow, and system architecture.
+                  I primarily work with modern web technologies such as Next.js,
+                  React, and Node.js to develop full-stack applications.
+                  My experience includes managing database systems with MongoDB,
+                  MySQL, and Supabase, building machine learning models using
+                  TensorFlow, creating automation workflows with n8n, and
+                  developing mobile applications with Kotlin and Android Studio.
                 </p>
                 <p className="text-lg md:text-xl leading-relaxed text-foreground/90 ">
-                  My projects include AI-powered web applications, automation
-                  workflows (n8n), deep learning based predictors, cybersecurity
-                  and systems tools, and full-stack CRUD platforms, reflecting
-                  solid foundations in OOP, DSA, database design, and operating
-                  systems. I emphasize clean, modular code and continuously
-                  refine my skills by applying emerging technologies to
-                  real-world problems.
+                  I place strong emphasis on clean architecture, modular code,
+                  and scalable system design so that applications remain
+                  maintainable as they grow. I am interested in projects where
+                  intelligent automation, performance, and thoughtful
+                  engineering can deliver meaningful real-world impact, and I
+                  remain open to opportunities to collaborate on ambitious and
+                  well-engineered products.
                 </p>
               </div>
             </div>
@@ -150,7 +152,7 @@ export default function About() {
                 </div>
                 <p className="text-foreground/80 text-base md:text-lg  leading-relaxed">
                   Built an AI-powered Recipe Generator with Next.js, Tailwind
-                  CSS, Google AI via n8n, and scalable data storage using
+                  CSS, Gemini AI via n8n, and scalable data storage using
                   Supabase and MongoDB.
                 </p>
               </div>
