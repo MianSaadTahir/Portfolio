@@ -22,7 +22,7 @@ export default function Contact() {
           <div className="flex justify-center gap-6 md:gap-8 mb-16">
             <div data-aos="zoom-in" data-aos-delay="50">
               <Link
-                href="mailto:tahirsaad99@gmail.com"
+                href="mailto:miansaadtahir@protonmail.com"
                 className="p-4 bg-card rounded-2xl shadow-lg border border-black/5 dark:border-white/5 hover:border-primary/50 hover:-translate-y-1 transition-all group block"
               >
                 <Mail className="w-7 h-7 md:w-8 md:h-8 text-foreground/90 group-hover:text-primary transition-colors" />
