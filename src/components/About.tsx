@@ -16,7 +16,7 @@ export default function About() {
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="space-y-6">
                 <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
-                  I am a Full Stack Developer with 3+ years of experience
+                  I am a Full Stack Developer with 2+ years of experience
                   building scalable web applications, AI-powered automations,
                   and robust backend systems. My work focuses on creating
                   software that is reliable, maintainable, and designed to solve
